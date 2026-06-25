@@ -9,9 +9,9 @@
             <!-- Left Side -->
 
             <div class="col-lg-5">
-
+                
                 <img
-                    src="<%= plant.image || '/images/default-plant.jpg' %>"
+                    src="<%= plant.image && plant.image.url ? plant.image.url : '/images/default-plant.jpg' %>"
                     class="img-fluid show-image"
                     alt="<%= plant.commonName %>"
                 >

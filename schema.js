@@ -5,11 +5,12 @@ const Joi = require("joi");
 // ======================================
 
 module.exports.plantSchema = Joi.object({
+
     plant: Joi.object({
 
-        commonName: Joi.string().required(),
+        commonName: Joi.string().trim().required(),
 
-        scientificName: Joi.string().required(),
+        scientificName: Joi.string().trim().required(),
 
         localName: Joi.string().allow("", null),
 
@@ -35,58 +36,28 @@ module.exports.plantSchema = Joi.object({
             )
             .required(),
 
-        image: Joi.object({
-            url: Joi.string().allow("", null),
-            filename: Joi.string().allow("", null),
-        }).optional(),
+        // Form fields
 
-        partsUsed: Joi.array().items(
-            Joi.string()
-        ),
+        partsUsed: Joi.array().items(Joi.string()),
 
-        medicinalUses: Joi.object({
+        primaryUses: Joi.array().items(Joi.string()),
 
-            primaryUses: Joi.array().items(
-                Joi.string()
-            ),
+        conditionsTreated: Joi.array().items(Joi.string()),
 
-            conditionsTreated: Joi.array().items(
-                Joi.string()
-            )
+        method: Joi.string().allow("", null),
 
-        }),
+        steps: Joi.array().items(Joi.string()),
 
-        howToUse: Joi.object({
+        precautions: Joi.array().items(Joi.string()),
 
-            method: Joi.string().allow("", null),
+        mild: Joi.array().items(Joi.string()),
 
-            steps: Joi.array().items(
-                Joi.string()
-            )
+        overuse: Joi.array().items(Joi.string()),
 
-        }),
-
-        precautions: Joi.array().items(
-            Joi.string()
-        ),
-
-        possibleSideEffects: Joi.object({
-
-            mild: Joi.array().items(
-                Joi.string()
-            ),
-
-            overuse: Joi.array().items(
-                Joi.string()
-            ),
-
-            allergicReactions: Joi.array().items(
-                Joi.string()
-            )
-
-        })
+        allergic: Joi.array().items(Joi.string()),
 
     }).required()
+
 });
 
 // ======================================
@@ -94,6 +65,7 @@ module.exports.plantSchema = Joi.object({
 // ======================================
 
 module.exports.diseaseSchema = Joi.object({
+
     disease: Joi.object({
 
         diseaseName: Joi.string().required(),
@@ -109,4 +81,5 @@ module.exports.diseaseSchema = Joi.object({
         )
 
     }).required()
+
 });

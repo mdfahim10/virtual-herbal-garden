@@ -15,7 +15,7 @@
                     </h1>
 
                     <form action="/plants" method="POST" class="needs-validation"
-                    novalidate>
+                    novalidate enctype="multipart/form-data">
 
                         <!-- Common Name -->
                         <div class="mb-3">
@@ -257,22 +257,23 @@
 
                         <!-- Image -->
 
-                        <div class="mb-4">
+                        <div class="mb-3">
 
-                            <label class="form-label">
+    <label class="form-label">
 
-                                Plant Image URL
+        Plant Image
 
-                            </label>
+    </label>
 
-                            <input
-                                type="text"
-                                class="form-control"
-                                name="plant[image]"
-                                placeholder="https://..."
-                            >
+    <input
+        type="file"
+        class="form-control"
+        name="plantImage"
+        accept="image/*"
+        required
+    >
 
-                        </div>
+</div>
 
                         <!-- Buttons -->
 

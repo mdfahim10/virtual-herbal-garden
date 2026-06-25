@@ -49,7 +49,7 @@
                 <div class="card plant-index-card h-100">
 
                     <img
-                        src="<%= plant.image || '/images/default-plant.jpg' %>"
+                        src="<%= plant.image && plant.image.url ? plant.image.url : '/images/default-plant.jpg' %>"
                         class="card-img-top plant-image"
                         alt="<%= plant.commonName %>"
                     >

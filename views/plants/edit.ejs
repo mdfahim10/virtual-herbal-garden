@@ -15,10 +15,12 @@
                     </h1>
 
                     <form
-                        action="/plants/<%= plant._id %>?_method=PUT"
-                        method="POST" class="needs-validation"
-novalidate
-                    >
+    action="/plants/<%= plant._id %>?_method=PUT"
+    method="POST"
+    class="needs-validation"
+    enctype="multipart/form-data"
+    novalidate
+>
 
                         <!-- Common Name -->
 
@@ -123,10 +125,10 @@ novalidate
                                 </option>
 
                                 <option
-                                    value="Flower"
-                                    <%= plant.plantType==="Flower" ? "selected" : "" %>>
-                                    Flower
-                                </option>
+    value="Creeper"
+    <%= plant.plantType==="Creeper" ? "selected" : "" %>>
+    Creeper
+</option>
 
                             </select>
 
@@ -166,6 +168,18 @@ novalidate
                                 <%= plant.ayushSystem==="Homeopathy" ? "selected" : "" %>>
                                 Homeopathy
                                 </option>
+
+                                <option
+                                    value="Yoga"
+                                    <%= plant.ayushSystem==="Yoga" ? "selected" : "" %>>
+                                    Yoga
+                                    </option>
+
+                                    <option
+                                    value="Naturopathy"
+                                    <%= plant.ayushSystem==="Naturopathy" ? "selected" : "" %>>
+                                    Naturopathy
+                                    </option>
 
                             </select>
 
@@ -336,22 +350,37 @@ novalidate
 
                         <!-- Image -->
 
-                        <div class="mb-4">
+                        <div class="mb-3">
 
-                            <label class="form-label">
+    <label class="form-label">
 
-                                Plant Image URL
+        Change Plant Image
 
-                            </label>
+    </label>
 
-                            <input
-                                type="text"
-                                class="form-control"
-                                name="plant[image]"
-                                value="<%= plant.image %>"
-                            >
+    <% if (plant.image && plant.image.url) { %>
 
-                        </div>
+<div class="mb-3 text-center">
+
+    <img
+        src="<%= plant.image.url %>"
+        class="img-fluid rounded"
+        style="max-width:250px;"
+    >
+
+</div>
+
+
+<% } %>
+    <input
+    
+        type="file"
+        class="form-control"
+        name="plantImage"
+        accept="image/*"
+    >
+
+</div>
 
                         <div class="text-center">
 

@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
@@ -25,30 +27,27 @@ const ExpressError = require("./utils/ExpressError");
 const app = express();
 
 
-// ======================================
+// =====================================================
 // MongoDB Connection
-// ======================================
+// =====================================================
 
-require("dotenv").config();
+const MONGO_URL =
+    process.env.ATLASDB_URL ||
+    "mongodb://127.0.0.1:27017/virtualHerbalGarden";
 
-const MONGO_URL = process.env.ATLASDB_URL || "mongodb://127.0.0.1:27017/virtualHerbalGarden";
-
-main()
+mongoose
+    .connect(MONGO_URL)
     .then(() => {
-        console.log("Database Connected");
+        console.log("✅ Database Connected");
     })
     .catch((err) => {
         console.log(err);
     });
 
-async function main() {
-    await mongoose.connect(MONGO_URL);
-}
 
-
-// ======================================
+// =====================================================
 // View Engine
-// ======================================
+// =====================================================
 
 app.engine("ejs", ejsMate);
 
@@ -57,11 +56,12 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 
-// ======================================
+// =====================================================
 // Middlewares
-// ======================================
+// =====================================================
 
 app.use(express.urlencoded({ extended: true }));
+
 app.use(express.json());
 
 app.use(methodOverride("_method"));
@@ -76,23 +76,34 @@ app.use(
     })
 );
 
-app.use(helmet({
-    contentSecurityPolicy: false,
-}));
+app.use(
+    helmet({
+        contentSecurityPolicy: false,
+    })
+);
 
 
-// ======================================
+// =====================================================
 // Session Configuration
-// ======================================
+// =====================================================
 
 const sessionOptions = {
-    secret: "virtual-herbal-garden-secret-key-2026",
+    secret:
+        process.env.SECRET ||
+        "virtual-herbal-garden-secret-key",
+
     resave: false,
+
     saveUninitialized: false,
+
     cookie: {
-        expires: Date.now() + 7 * 24 * 60 * 60 * 1000,
-        maxAge: 7 * 24 * 60 * 60 * 1000,
         httpOnly: true,
+
+        expires:
+            Date.now() + 7 * 24 * 60 * 60 * 1000,
+
+        maxAge:
+            7 * 24 * 60 * 60 * 1000,
     },
 };
 
@@ -101,24 +112,26 @@ app.use(session(sessionOptions));
 app.use(flash());
 
 
-// ======================================
+// =====================================================
 // Passport Configuration
-// ======================================
+// =====================================================
 
 app.use(passport.initialize());
 
 app.use(passport.session());
 
-passport.use(new LocalStrategy(User.authenticate()));
+passport.use(
+    new LocalStrategy(User.authenticate())
+);
 
 passport.serializeUser(User.serializeUser());
 
 passport.deserializeUser(User.deserializeUser());
 
 
-// ======================================
+// =====================================================
 // Global Variables
-// ======================================
+// =====================================================
 
 app.use((req, res, next) => {
 
@@ -133,16 +146,14 @@ app.use((req, res, next) => {
 });
 
 
-// ======================================
+// =====================================================
 // Routes
-// ======================================
+// =====================================================
 
 app.get("/", (req, res) => {
-    res.render("home", {
-        success: [],
-        error: [],
-        currUser: null
-    });
+
+    res.render("home");
+
 });
 
 app.use("/plants", plantRoutes);
@@ -152,38 +163,44 @@ app.use("/diseases", diseaseRoutes);
 app.use("/", userRoutes);
 
 
-// ======================================
+// =====================================================
 // 404 Handler
-// ======================================
+// =====================================================
 
-app.all("/{*any}", (req, res, next) => {
+app.all("*", (req, res, next) => {
+
     next(new ExpressError(404, "Page Not Found"));
+
 });
 
 
-// ======================================
+// =====================================================
 // Global Error Handler
-// ======================================
+// =====================================================
 
 app.use((err, req, res, next) => {
 
-    let { statusCode = 500, message = "Something Went Wrong!" } = err;
+    const { statusCode = 500 } = err;
 
-    res.status(statusCode);
+    if (!err.message) {
+        err.message = "Something Went Wrong!";
+    }
 
-    res.render("error.ejs", {
+    res.status(statusCode).render("error", {
         err,
     });
 
 });
 
 
-// ======================================
+// =====================================================
 // Server
-// ======================================
+// =====================================================
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
-    console.log(`Server Running On Port ${PORT}`);
+
+    console.log(`🚀 Server Running On Port ${PORT}`);
+
 });
