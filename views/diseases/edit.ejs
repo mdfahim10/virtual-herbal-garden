@@ -1,0 +1,224 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="new-disease-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div class="form-card">
+
+                    <h1 class="text-center mb-4">
+
+                        ✏️ Edit Disease
+
+                    </h1>
+
+                    <form
+                        action="/diseases/<%= disease._id %>?_method=PUT"
+                        method="POST" class="needs-validation"
+novalidate
+                    >
+
+                        <!-- Disease Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Disease Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="disease[name]"
+                                value="<%= disease.name %>"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Category -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Disease Category
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                name="disease[category]"
+                            >
+
+                                <option value="Respiratory"
+                                    <%= disease.category==="Respiratory" ? "selected" : "" %>>
+                                    Respiratory
+                                </option>
+
+                                <option value="Digestive"
+                                    <%= disease.category==="Digestive" ? "selected" : "" %>>
+                                    Digestive
+                                </option>
+
+                                <option value="Skin"
+                                    <%= disease.category==="Skin" ? "selected" : "" %>>
+                                    Skin
+                                </option>
+
+                                <option value="Mental Health"
+                                    <%= disease.category==="Mental Health" ? "selected" : "" %>>
+                                    Mental Health
+                                </option>
+
+                                <option value="Lifestyle"
+                                    <%= disease.category==="Lifestyle" ? "selected" : "" %>>
+                                    Lifestyle
+                                </option>
+
+                                <option value="Immunity"
+                                    <%= disease.category==="Immunity" ? "selected" : "" %>>
+                                    Immunity
+                                </option>
+
+                                <option value="General"
+                                    <%= disease.category==="General" ? "selected" : "" %>>
+                                    General
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Description
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="4"
+                                name="disease[description]"
+                            ><%= disease.description %></textarea>
+
+                        </div>
+
+                        <!-- Symptoms -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Symptoms
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[symptoms]"
+                            ><%= disease.symptoms.join(", ") %></textarea>
+
+                        </div>
+
+                        <!-- Recommended Plants -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Recommended Medicinal Plants
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[recommendedPlants]"
+                            ><%= disease.recommendedPlants.join(", ") %></textarea>
+
+                        </div>
+
+                        <!-- Prevention -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Prevention
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[prevention]"
+                            ><%= disease.prevention.join(", ") %></textarea>
+
+                        </div>
+
+                        <!-- Lifestyle -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Lifestyle Recommendations
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[lifestyle]"
+                            ><%= disease.lifestyle.join(", ") %></textarea>
+
+                        </div>
+
+                        <!-- Buttons -->
+
+                        <div class="text-center">
+
+                            <button
+                                class="btn btn-success btn-lg me-3"
+                            >
+
+                                <i class="fa-solid fa-floppy-disk"></i>
+
+                                Update Disease
+
+                            </button>
+
+                            <a
+                                href="/diseases/<%= disease._id %>"
+                                class="btn btn-secondary btn-lg"
+                            >
+
+                                Cancel
+
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

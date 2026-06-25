@@ -1,0 +1,70 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="error-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="error-card text-center">
+
+                    <i class="fa-solid fa-triangle-exclamation error-icon"></i>
+
+                    <h1 class="display-3 mt-4">
+
+                        <%= err.statusCode || 500 %>
+
+                    </h1>
+
+                    <h2 class="mb-3">
+
+                        Oops! Something Went Wrong
+
+                    </h2>
+
+                    <p class="lead text-muted">
+
+                        <%= err.message || "An unexpected error occurred." %>
+
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        The page you're looking for might not exist, or an
+                        unexpected error occurred while processing your request.
+
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="/" class="btn btn-success btn-lg me-3">
+
+                            <i class="fa-solid fa-house"></i>
+
+                            Home
+
+                        </a>
+
+                        <a href="/plants" class="btn btn-outline-success btn-lg">
+
+                            <i class="fa-solid fa-seedling"></i>
+
+                            Explore Plants
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

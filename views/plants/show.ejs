@@ -1,0 +1,215 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="show-plant-section">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Left Side -->
+
+            <div class="col-lg-5">
+
+                <img
+                    src="<%= plant.image || '/images/default-plant.jpg' %>"
+                    class="img-fluid show-image"
+                    alt="<%= plant.commonName %>"
+                >
+
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="col-lg-7">
+
+                <h1 class="show-title">
+
+                    <%= plant.commonName %>
+
+                </h1>
+
+                <h4 class="text-muted mb-4">
+
+                    <em><%= plant.scientificName %></em>
+
+                </h4>
+
+                <table class="table table-bordered">
+
+                    <tr>
+                        <th>Local Name</th>
+                        <td><%= plant.localName %></td>
+                    </tr>
+
+                    <tr>
+                        <th>Plant Type</th>
+                        <td><%= plant.plantType %></td>
+                    </tr>
+
+                    <tr>
+                        <th>AYUSH System</th>
+                        <td><%= plant.ayushSystem %></td>
+                    </tr>
+
+                    <tr>
+                        <th>Parts Used</th>
+                        <td>
+
+                            <% plant.partsUsed.forEach(part=>{ %>
+
+                                <span class="badge bg-success me-2">
+
+                                    <%= part %>
+
+                                </span>
+
+                            <% }) %>
+
+                        </td>
+                    </tr>
+
+                </table>
+
+                <hr>
+
+                <h3>🌿 Primary Uses</h3>
+
+                <ul>
+
+                    <% plant.medicinalUses.primaryUses.forEach(use=>{ %>
+
+                    <li><%= use %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <hr>
+
+                <h3>🩺 Conditions Treated</h3>
+
+                <ul>
+
+                    <% plant.medicinalUses.conditionsTreated.forEach(condition=>{ %>
+
+                    <li><%= condition %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <hr>
+
+                <h3>🧪 How To Use</h3>
+
+                <h5>
+
+                    Method :
+                    <span class="text-success">
+
+                        <%= plant.howToUse.method %>
+
+                    </span>
+
+                </h5>
+
+                <ol>
+
+                    <% plant.howToUse.steps.forEach(step=>{ %>
+
+                    <li><%= step %></li>
+
+                    <% }) %>
+
+                </ol>
+
+                <hr>
+
+                <h3>⚠ Precautions</h3>
+
+                <ul>
+
+                    <% plant.precautions.forEach(item=>{ %>
+
+                    <li><%= item %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <hr>
+
+                <h3>💊 Possible Side Effects</h3>
+
+                <h5>Mild</h5>
+
+                <ul>
+
+                    <% plant.possibleSideEffects.mild.forEach(item=>{ %>
+
+                    <li><%= item %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <h5>Overuse</h5>
+
+                <ul>
+
+                    <% plant.possibleSideEffects.overuse.forEach(item=>{ %>
+
+                    <li><%= item %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <h5>Allergic Reactions</h5>
+
+                <ul>
+
+                    <% plant.possibleSideEffects.allergicReactions.forEach(item=>{ %>
+
+                    <li><%= item %></li>
+
+                    <% }) %>
+
+                </ul>
+
+                <hr>
+
+                <% if(currUser){ %>
+
+                <a
+                    href="/plants/<%= plant._id %>/edit"
+                    class="btn btn-warning me-3"
+                >
+
+                    Edit
+
+                </a>
+
+                <form
+                    method="POST"
+                    action="/plants/<%= plant._id %>?_method=DELETE"
+                    class="d-inline"
+                >
+
+                    <button class="btn btn-danger">
+
+                        Delete
+
+                    </button>
+
+                </form>
+
+                <% } %>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

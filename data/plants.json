@@ -1,0 +1,2123 @@
+[
+  {
+    "commonName": "Tulsi",
+    "scientificName": "Ocimum sanctum",
+    "localName": "Holy Basil",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Immunity booster", "Respiratory health"],
+      "conditionsTreated": ["Cold", "Cough", "Mild fever", "Stress"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Take 5–7 fresh Tulsi leaves",
+        "Wash them thoroughly",
+        "Boil the leaves in one cup of water for 5 minutes",
+        "Allow it to cool slightly",
+        "Consume once a day"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive consumption",
+      "Pregnant women should consult a practitioner",
+      "Not recommended for long-term continuous use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach irritation in sensitive individuals"],
+      "overuse": ["Lowered blood sugar levels"],
+      "allergicReactions": ["Rare skin or throat irritation"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database / Wikimedia Commons",
+      "informationSource": "AYUSH publications and Ayurveda textbooks"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Amla",
+    "scientificName": "Phyllanthus emblica",
+    "localName": "Indian Gooseberry",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Fruit"],
+    "medicinalUses": {
+      "primaryUses": ["Immunity booster", "Digestive health"],
+      "conditionsTreated": ["Weak immunity", "Indigestion", "Acidity"]
+    },
+    "howToUse": {
+      "method": "Juice or powder",
+      "steps": [
+        "Wash fresh Amla fruits",
+        "Crush or blend to extract juice",
+        "Dilute with water if needed",
+        "Consume fresh",
+        "Traditionally taken in the morning"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in people with low blood sugar"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Dryness in the body"],
+      "overuse": ["Acidity"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database",
+      "informationSource": "Classical Ayurveda literature"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Neem",
+    "scientificName": "Azadirachta indica",
+    "localName": "Neem",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Leaves", "Bark"],
+    "medicinalUses": {
+      "primaryUses": ["Blood purifier", "Skin care"],
+      "conditionsTreated": ["Skin infections", "Acne", "Minor wounds"]
+    },
+    "howToUse": {
+      "method": "Paste or decoction",
+      "steps": [
+        "Take fresh Neem leaves",
+        "Wash thoroughly",
+        "Grind to make a paste or boil for decoction",
+        "Allow to cool",
+        "Use externally or traditionally as advised"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid internal use in pregnancy",
+      "Do not consume in large quantities"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Bitter taste", "Nausea"],
+      "overuse": ["Liver stress"],
+      "allergicReactions": ["Rare skin irritation"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH medicinal plant manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Aloe Vera",
+    "scientificName": "Aloe barbadensis miller",
+    "localName": "Ghritkumari",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaf gel"],
+    "medicinalUses": {
+      "primaryUses": ["Skin healing", "Digestive support"],
+      "conditionsTreated": ["Burns", "Constipation", "Skin dryness"]
+    },
+    "howToUse": {
+      "method": "Gel application",
+      "steps": [
+        "Cut a fresh Aloe Vera leaf",
+        "Extract the gel",
+        "Wash the gel with clean water",
+        "Apply externally or traditionally use internally",
+        "Use fresh gel when possible"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid excessive internal use",
+      "Pregnant women should avoid internal use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach cramps"],
+      "overuse": ["Diarrhea"],
+      "allergicReactions": ["Rare skin allergy"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH portal",
+      "informationSource": "Herbal medicine textbooks"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  
+  {
+    "commonName": "Ashwagandha",
+    "scientificName": "Withania somnifera",
+    "localName": "Indian Ginseng",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Stress relief", "Strength enhancer"],
+      "conditionsTreated": ["Stress", "Fatigue", "Weak immunity"]
+    },
+    "howToUse": {
+      "method": "Powder with warm liquid",
+      "steps": [
+        "Dry the Ashwagandha root",
+        "Grind into fine powder",
+        "Mix with warm water or milk",
+        "Consume traditionally",
+        "Preferably taken at night"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid during pregnancy",
+      "Use cautiously with thyroid conditions"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Drowsiness"],
+      "overuse": ["Stomach upset"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH research portal",
+      "informationSource": "Classical Ayurveda texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+  
+
+
+
+  {
+    "commonName": "Turmeric",
+    "scientificName": "Curcuma longa",
+    "localName": "Haldi",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Anti-inflammatory", "Immunity booster"],
+      "conditionsTreated": ["Wounds", "Joint pain", "Skin problems", "Cold"]
+    },
+    "howToUse": {
+      "method": "Powder or paste",
+      "steps": [
+        "Clean and dry turmeric rhizome",
+        "Grind into fine powder",
+        "Mix with warm water or milk",
+        "Consume traditionally or apply as paste",
+        "Use in moderate quantity"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive consumption",
+      "Use cautiously with gallbladder issues",
+      "Stop use before surgery"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach discomfort"],
+      "overuse": ["Acidity", "Nausea"],
+      "allergicReactions": ["Rare skin irritation"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database",
+      "informationSource": "Ayurveda pharmacopeia"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Giloy",
+    "scientificName": "Tinospora cordifolia",
+    "localName": "Guduchi",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Stem"],
+    "medicinalUses": {
+      "primaryUses": ["Immunity booster", "Detoxification"],
+      "conditionsTreated": ["Fever", "Weak immunity", "Indigestion"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Cut fresh Giloy stem into small pieces",
+        "Wash thoroughly",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume after cooling"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid overuse",
+      "Use cautiously in autoimmune conditions"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Headache"],
+      "overuse": ["Low blood sugar"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH portal",
+      "informationSource": "Traditional Ayurveda texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Moringa",
+    "scientificName": "Moringa oleifera",
+    "localName": "Drumstick Tree",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Leaves", "Pods"],
+    "medicinalUses": {
+      "primaryUses": ["Nutritional supplement", "Energy booster"],
+      "conditionsTreated": ["Weakness", "Vitamin deficiency", "Inflammation"]
+    },
+    "howToUse": {
+      "method": "Powder or cooked leaves",
+      "steps": [
+        "Wash fresh Moringa leaves",
+        "Dry or cook lightly",
+        "Grind into powder or consume cooked",
+        "Use with food",
+        "Consume in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Pregnant women should consult practitioner"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Digestive upset"],
+      "overuse": ["Low blood pressure"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH nutrition manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Shatavari",
+    "scientificName": "Asparagus racemosus",
+    "localName": "Shatamuli",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Reproductive health", "Strength enhancer"],
+      "conditionsTreated": ["Weak immunity", "Digestive issues", "Fatigue"]
+    },
+    "howToUse": {
+      "method": "Powder with milk",
+      "steps": [
+        "Dry Shatavari roots",
+        "Grind into powder",
+        "Mix with warm milk",
+        "Consume traditionally",
+        "Preferably taken at night"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid in severe indigestion",
+      "Consult practitioner during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Bloating"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant gallery",
+      "informationSource": "Classical Ayurveda literature"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Brahmi",
+    "scientificName": "Bacopa monnieri",
+    "localName": "Jal Brahmi",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Whole plant"],
+    "medicinalUses": {
+      "primaryUses": ["Memory enhancer", "Stress relief"],
+      "conditionsTreated": ["Anxiety", "Poor memory", "Mental fatigue"]
+    },
+    "howToUse": {
+      "method": "Juice or powder",
+      "steps": [
+        "Wash fresh Brahmi plant",
+        "Crush to extract juice or dry and powder",
+        "Consume in small quantity",
+        "Preferably taken in the morning",
+        "Use regularly in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive use",
+      "Use cautiously with thyroid disorders"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Dry mouth"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database",
+      "informationSource": "Ayurveda brain-health texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Ginger",
+    "scientificName": "Zingiber officinale",
+    "localName": "Adrak",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive aid", "Anti-inflammatory"],
+      "conditionsTreated": ["Indigestion", "Nausea", "Cold", "Sore throat"]
+    },
+    "howToUse": {
+      "method": "Decoction or fresh use",
+      "steps": [
+        "Wash fresh ginger rhizome",
+        "Slice into small pieces",
+        "Boil in one cup of water for 5–7 minutes",
+        "Strain the liquid",
+        "Consume warm"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once or twice daily",
+    "precautions": [
+      "Avoid excessive consumption",
+      "Use cautiously with bleeding disorders"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Heartburn"],
+      "overuse": ["Acidity", "Stomach irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH digestion manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Ajwain",
+    "scientificName": "Trachyspermum ammi",
+    "localName": "Carom Seeds",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Seeds"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive support", "Gas relief"],
+      "conditionsTreated": ["Indigestion", "Gas", "Abdominal pain"]
+    },
+    "howToUse": {
+      "method": "Infusion",
+      "steps": [
+        "Take one teaspoon of Ajwain seeds",
+        "Boil in water for 5 minutes",
+        "Allow to cool slightly",
+        "Strain the water",
+        "Consume warm"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid excessive use",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Mouth dryness"],
+      "overuse": ["Burning sensation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database",
+      "informationSource": "Traditional Ayurveda texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Triphala",
+    "scientificName": "Terminalia chebula, Terminalia bellirica, Phyllanthus emblica",
+    "localName": "Triphala",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herbal formulation",
+    "partsUsed": ["Fruit"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive cleanser", "Detoxification"],
+      "conditionsTreated": ["Constipation", "Poor digestion", "Bloating"]
+    },
+    "howToUse": {
+      "method": "Powder with warm water",
+      "steps": [
+        "Take Triphala powder",
+        "Mix with warm water",
+        "Stir well",
+        "Consume traditionally",
+        "Preferably taken at night"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in dehydration"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Loose stools"],
+      "overuse": ["Dehydration"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH formulation manuals",
+      "informationSource": "Ayurveda pharmacopeia"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Fennel",
+    "scientificName": "Foeniculum vulgare",
+    "localName": "Saunf",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Seeds"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive aid", "Cooling agent"],
+      "conditionsTreated": ["Acidity", "Gas", "Indigestion"]
+    },
+    "howToUse": {
+      "method": "Seed infusion",
+      "steps": [
+        "Take one teaspoon of fennel seeds",
+        "Boil in water for 5 minutes",
+        "Allow to cool",
+        "Strain the liquid",
+        "Consume after meals"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used after meals",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in hormone-sensitive conditions"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Photosensitivity"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH digestion texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Cumin",
+    "scientificName": "Cuminum cyminum",
+    "localName": "Jeera",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Seeds"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive stimulant", "Metabolism support"],
+      "conditionsTreated": ["Bloating", "Indigestion", "Loss of appetite"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Take one teaspoon cumin seeds",
+        "Boil in water for 5 minutes",
+        "Allow to cool slightly",
+        "Strain the liquid",
+        "Consume warm"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Heartburn"],
+      "overuse": ["Liver stress"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal resources",
+      "informationSource": "Traditional Ayurveda manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Haritaki",
+    "scientificName": "Terminalia chebula",
+    "localName": "Harad",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Fruit"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive regulator", "Detoxification"],
+      "conditionsTreated": ["Constipation", "Indigestion", "Bloating"]
+    },
+    "howToUse": {
+      "method": "Powder with warm water",
+      "steps": [
+        "Dry the Haritaki fruit",
+        "Grind into fine powder",
+        "Take a small quantity of powder",
+        "Mix with warm water",
+        "Consume traditionally at night"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in dehydration",
+      "Not recommended during pregnancy without advice"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Loose stools"],
+      "overuse": ["Dehydration", "Weakness"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal database",
+      "informationSource": "Ayurveda pharmacopeia"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Bael",
+    "scientificName": "Aegle marmelos",
+    "localName": "Bel",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Fruit", "Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Digestive health", "Cooling agent"],
+      "conditionsTreated": ["Diarrhea", "Dysentery", "Digestive weakness"]
+    },
+    "howToUse": {
+      "method": "Fruit pulp drink",
+      "steps": [
+        "Break ripe Bael fruit",
+        "Scoop out the pulp",
+        "Mix pulp with clean water",
+        "Strain if required",
+        "Consume fresh"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid unripe fruit",
+      "Use cautiously in constipation"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Constipation"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH digestive health texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Hing",
+    "scientificName": "Ferula asafoetida",
+    "localName": "Asafoetida",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Resin"],
+    "medicinalUses": {
+      "primaryUses": ["Gas relief", "Digestive stimulant"],
+      "conditionsTreated": ["Flatulence", "Abdominal pain", "Indigestion"]
+    },
+    "howToUse": {
+      "method": "Powder with warm water",
+      "steps": [
+        "Take a pinch of Hing powder",
+        "Mix with warm water or food",
+        "Stir well",
+        "Consume in very small quantity",
+        "Use only occasionally"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Use in very small quantity",
+      "Avoid during pregnancy",
+      "Not suitable for children"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Burning sensation"],
+      "overuse": ["Headache", "Nausea"],
+      "allergicReactions": ["Rare skin irritation"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal resources",
+      "informationSource": "Traditional Ayurveda digestion manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Pudina",
+    "scientificName": "Mentha arvensis",
+    "localName": "Mint",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Cooling agent", "Digestive aid"],
+      "conditionsTreated": ["Nausea", "Indigestion", "Headache"]
+    },
+    "howToUse": {
+      "method": "Juice or infusion",
+      "steps": [
+        "Wash fresh mint leaves",
+        "Crush to extract juice or boil for infusion",
+        "Strain the liquid",
+        "Consume fresh",
+        "Use in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in acid reflux"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Heartburn"],
+      "overuse": ["Digestive irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH herbal medicine guides"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Isabgol",
+    "scientificName": "Plantago ovata",
+    "localName": "Psyllium Husk",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Seeds", "Husk"],
+    "medicinalUses": {
+      "primaryUses": ["Laxative", "Digestive regulator"],
+      "conditionsTreated": ["Constipation", "Irritable bowel", "Digestive discomfort"]
+    },
+    "howToUse": {
+      "method": "Husk with water",
+      "steps": [
+        "Take Isabgol husk",
+        "Mix with a glass of water",
+        "Stir immediately",
+        "Consume before it thickens",
+        "Drink extra water afterward"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Always take with sufficient water",
+      "Avoid in intestinal blockage"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Bloating"],
+      "overuse": ["Abdominal discomfort"],
+      "allergicReactions": ["Rare breathing difficulty"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH nutrition portal",
+      "informationSource": "Ayurveda digestive health literature"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Mulethi",
+    "scientificName": "Glycyrrhiza glabra",
+    "localName": "Licorice",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory support", "Soothing agent"],
+      "conditionsTreated": ["Cough", "Sore throat", "Acidity"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Take dried Mulethi root pieces",
+        "Wash thoroughly",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume warm in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid long-term continuous use",
+      "Use cautiously in high blood pressure",
+      "Not recommended during pregnancy without advice"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Headache"],
+      "overuse": ["Increased blood pressure", "Water retention"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH respiratory health manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Vasaka",
+    "scientificName": "Justicia adhatoda",
+    "localName": "Adulsa",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory relief", "Expectorant"],
+      "conditionsTreated": ["Asthma", "Bronchitis", "Cough"]
+    },
+    "howToUse": {
+      "method": "Leaf decoction",
+      "steps": [
+        "Take fresh Vasaka leaves",
+        "Wash thoroughly",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume after cooling"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Vomiting"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant gallery",
+      "informationSource": "Traditional Ayurveda respiratory texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Pippali",
+    "scientificName": "Piper longum",
+    "localName": "Long Pepper",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Fruit"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory stimulant", "Digestive enhancer"],
+      "conditionsTreated": ["Cold", "Cough", "Weak digestion"]
+    },
+    "howToUse": {
+      "method": "Powder with honey",
+      "steps": [
+        "Dry Pippali fruits",
+        "Grind into fine powder",
+        "Mix small quantity with honey",
+        "Consume traditionally",
+        "Use in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Not suitable for children",
+      "Avoid during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Burning sensation"],
+      "overuse": ["Gastric irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal resources",
+      "informationSource": "Ayurveda digestion and respiratory manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Kantakari",
+    "scientificName": "Solanum xanthocarpum",
+    "localName": "Yellow Berried Nightshade",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Whole plant"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory support", "Anti-inflammatory"],
+      "conditionsTreated": ["Asthma", "Cough", "Chest congestion"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Take dried parts of Kantakari plant",
+        "Wash if required",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume after cooling"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Stomach irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant resources",
+      "informationSource": "Classical Ayurveda respiratory texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Pushkarmool",
+    "scientificName": "Inula racemosa",
+    "localName": "Pushkarmool",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory strengthener", "Cardiac support"],
+      "conditionsTreated": ["Chest pain", "Breathing difficulty", "Weak lungs"]
+    },
+    "howToUse": {
+      "method": "Root decoction",
+      "steps": [
+        "Dry Pushkarmool roots",
+        "Crush into small pieces",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive use",
+      "Consult practitioner for long-term use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Dizziness"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH classical herb gallery",
+      "informationSource": "Ayurveda cardiovascular and respiratory texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Anantmool",
+    "scientificName": "Hemidesmus indicus",
+    "localName": "Indian Sarsaparilla",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Blood purifier", "Cooling agent"],
+      "conditionsTreated": ["Skin disorders", "Burning sensation", "General weakness"]
+    },
+    "howToUse": {
+      "method": "Root decoction",
+      "steps": [
+        "Wash Anantmool roots thoroughly",
+        "Cut into small pieces",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume after cooling"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner for long-term use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant resources",
+      "informationSource": "Ayurveda skin-care texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Talisa Patra",
+    "scientificName": "Abies webbiana",
+    "localName": "Talispatra",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory relief", "Digestive support"],
+      "conditionsTreated": ["Cough", "Cold", "Loss of appetite"]
+    },
+    "howToUse": {
+      "method": "Leaf decoction",
+      "steps": [
+        "Take dried Talisa Patra leaves",
+        "Crush lightly",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume warm"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach irritation"],
+      "overuse": ["Digestive upset"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herb gallery",
+      "informationSource": "Ayurveda respiratory manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Banafsha",
+    "scientificName": "Viola odorata",
+    "localName": "Sweet Violet",
+    "ayushSystem": "Unani",
+    "plantType": "Herb",
+    "partsUsed": ["Flowers", "Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Respiratory soothing", "Cooling agent"],
+      "conditionsTreated": ["Dry cough", "Sore throat", "Fever"]
+    },
+    "howToUse": {
+      "method": "Flower infusion",
+      "steps": [
+        "Take dried Banafsha flowers",
+        "Soak in hot water",
+        "Cover and steep for 10 minutes",
+        "Strain the infusion",
+        "Consume warm"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive use",
+      "Use cautiously in children"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Drowsiness"],
+      "overuse": ["Loose stools"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Unani medicinal plant archives",
+      "informationSource": "Unani pharmacopeia"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Jatamansi",
+    "scientificName": "Nardostachys jatamansi",
+    "localName": "Spikenard",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Stress relief", "Sleep support"],
+      "conditionsTreated": ["Anxiety", "Insomnia", "Mental fatigue"]
+    },
+    "howToUse": {
+      "method": "Powder with warm liquid",
+      "steps": [
+        "Dry Jatamansi rhizome",
+        "Grind into fine powder",
+        "Mix with warm water or milk",
+        "Consume in small quantity",
+        "Preferably taken at night"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Drowsiness"],
+      "overuse": ["Low blood pressure"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH brain-health resources",
+      "informationSource": "Ayurveda nervous system texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Tagara",
+    "scientificName": "Valeriana wallichii",
+    "localName": "Indian Valerian",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Sedative", "Stress relief"],
+      "conditionsTreated": ["Insomnia", "Anxiety", "Restlessness"]
+    },
+    "howToUse": {
+      "method": "Root decoction",
+      "steps": [
+        "Dry Tagara roots",
+        "Crush into small pieces",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume before bedtime"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily at night",
+    "precautions": [
+      "Avoid daytime use",
+      "Use cautiously in low blood pressure"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Drowsiness"],
+      "overuse": ["Headache"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal herb gallery",
+      "informationSource": "Ayurveda sleep-health texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Shankhpushpi",
+    "scientificName": "Convolvulus pluricaulis",
+    "localName": "Shankhpushpi",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Whole plant"],
+    "medicinalUses": {
+      "primaryUses": ["Memory enhancer", "Mental calmness"],
+      "conditionsTreated": ["Anxiety", "Poor memory", "Mental stress"]
+    },
+    "howToUse": {
+      "method": "Powder or decoction",
+      "steps": [
+        "Dry the whole Shankhpushpi plant",
+        "Grind into fine powder or boil in water",
+        "Prepare a mild decoction if boiling",
+        "Allow to cool",
+        "Consume in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Drowsiness"],
+      "overuse": ["Low blood pressure"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH brain-health resources",
+      "informationSource": "Classical Ayurveda nervous system texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Mandukaparni",
+    "scientificName": "Centella asiatica",
+    "localName": "Gotu Kola",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Brain tonic", "Wound healing"],
+      "conditionsTreated": ["Poor concentration", "Skin wounds", "Stress"]
+    },
+    "howToUse": {
+      "method": "Fresh juice or paste",
+      "steps": [
+        "Wash fresh Mandukaparni leaves",
+        "Crush to extract juice or make paste",
+        "Strain if needed",
+        "Consume fresh or apply externally",
+        "Use in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in liver conditions"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Headache"],
+      "overuse": ["Digestive upset"],
+      "allergicReactions": ["Rare skin irritation"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "AYUSH herbal medicine texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Jyotishmati",
+    "scientificName": "Celastrus paniculatus",
+    "localName": "Malkangni",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Seeds"],
+    "medicinalUses": {
+      "primaryUses": ["Memory support", "Nervous system strength"],
+      "conditionsTreated": ["Memory loss", "Mental fatigue", "Stress"]
+    },
+    "howToUse": {
+      "method": "Seed oil or powder",
+      "steps": [
+        "Dry Jyotishmati seeds",
+        "Grind into powder or extract oil",
+        "Use in very small quantity",
+        "Consume traditionally",
+        "Avoid excess use"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily in small quantity",
+    "precautions": [
+      "Avoid excessive intake",
+      "Not recommended during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Headache"],
+      "overuse": ["Burning sensation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant archives",
+      "informationSource": "Ayurveda brain tonic literature"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Vacha",
+    "scientificName": "Acorus calamus",
+    "localName": "Sweet Flag",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Speech support", "Digestive stimulant"],
+      "conditionsTreated": ["Speech disorders", "Indigestion", "Mental sluggishness"]
+    },
+    "howToUse": {
+      "method": "Powder (very small quantity)",
+      "steps": [
+        "Dry Vacha rhizome",
+        "Grind into fine powder",
+        "Use a very small amount",
+        "Mix with warm water",
+        "Consume occasionally"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used occasionally",
+    "precautions": [
+      "Use only in very small quantity",
+      "Avoid during pregnancy",
+      "Not suitable for children"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Vomiting"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH classical herb gallery",
+      "informationSource": "Ayurveda speech and cognition texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Manjistha",
+    "scientificName": "Rubia cordifolia",
+    "localName": "Indian Madder",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Climber",
+    "partsUsed": ["Root"],
+    "medicinalUses": {
+      "primaryUses": ["Blood purifier", "Skin health"],
+      "conditionsTreated": ["Acne", "Skin inflammation", "Wounds"]
+    },
+    "howToUse": {
+      "method": "Root decoction or paste",
+      "steps": [
+        "Wash Manjistha roots",
+        "Dry and crush into small pieces",
+        "Boil in water to prepare decoction",
+        "Allow to cool",
+        "Consume or apply externally as needed"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner for long-term use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Loose stools"],
+      "overuse": ["Digestive upset"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH skin-care herb resources",
+      "informationSource": "Ayurveda dermatology texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Karanja",
+    "scientificName": "Pongamia pinnata",
+    "localName": "Indian Beech",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Seeds", "Leaves", "Bark"],
+    "medicinalUses": {
+      "primaryUses": ["Skin care", "Antimicrobial"],
+      "conditionsTreated": ["Skin infections", "Eczema", "Wounds"]
+    },
+    "howToUse": {
+      "method": "Oil or paste",
+      "steps": [
+        "Collect mature Karanja seeds",
+        "Extract oil traditionally or grind leaves into paste",
+        "Apply externally on affected area",
+        "Leave for some time",
+        "Wash gently with water"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used externally as needed",
+    "precautions": [
+      "For external use only",
+      "Avoid application on open wounds without guidance",
+      "Not recommended during pregnancy for internal use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Skin irritation"],
+      "overuse": ["Redness or itching"],
+      "allergicReactions": ["Rare allergic rash"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant database",
+      "informationSource": "Ayurveda skin treatment texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Chandana",
+    "scientificName": "Santalum album",
+    "localName": "Sandalwood",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Heartwood"],
+    "medicinalUses": {
+      "primaryUses": ["Cooling agent", "Skin soothing"],
+      "conditionsTreated": ["Skin irritation", "Heat rashes", "Headache"]
+    },
+    "howToUse": {
+      "method": "Paste application",
+      "steps": [
+        "Rub sandalwood stick on clean stone with water",
+        "Prepare a smooth paste",
+        "Apply gently on skin or forehead",
+        "Allow to dry",
+        "Wash with clean water"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used externally as needed",
+    "precautions": [
+      "For external use only",
+      "Avoid excessive application",
+      "Use pure sandalwood only"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Skin dryness"],
+      "overuse": ["Skin irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "Wikimedia Commons",
+      "informationSource": "Ayurveda dermatology manuals"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Bhringraj",
+    "scientificName": "Eclipta alba",
+    "localName": "False Daisy",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Hair growth support", "Liver tonic"],
+      "conditionsTreated": ["Hair fall", "Premature greying", "Weak liver"]
+    },
+    "howToUse": {
+      "method": "Juice or oil",
+      "steps": [
+        "Wash fresh Bhringraj leaves",
+        "Crush to extract juice or prepare oil",
+        "Apply on scalp or consume traditionally",
+        "Massage gently if applied externally",
+        "Use regularly in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or externally as needed",
+    "precautions": [
+      "Avoid excessive internal use",
+      "Use cautiously during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Upset stomach"],
+      "overuse": ["Loose stools"],
+      "allergicReactions": ["Rare skin allergy"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH hair-care herb resources",
+      "informationSource": "Ayurveda liver and hair-care texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Lodhra",
+    "scientificName": "Symplocos racemosa",
+    "localName": "Lodh",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Bark"],
+    "medicinalUses": {
+      "primaryUses": ["Astringent", "Skin and gynecological support"],
+      "conditionsTreated": ["Skin inflammation", "Wounds", "Bleeding disorders"]
+    },
+    "howToUse": {
+      "method": "Bark decoction or paste",
+      "steps": [
+        "Dry Lodhra bark",
+        "Grind into powder or boil in water",
+        "Prepare decoction or paste",
+        "Allow to cool",
+        "Use externally or traditionally as advised"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner for internal use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Constipation"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal plant gallery",
+      "informationSource": "Ayurveda gynecology texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Haridra (Wild Turmeric)",
+    "scientificName": "Curcuma aromatica",
+    "localName": "Kasturi Manjal",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Skin cleansing", "Anti-inflammatory"],
+      "conditionsTreated": ["Acne", "Skin pigmentation", "Minor wounds"]
+    },
+    "howToUse": {
+      "method": "Powder or paste",
+      "steps": [
+        "Dry wild turmeric rhizome",
+        "Grind into fine powder",
+        "Mix with water or milk to form paste",
+        "Apply on skin",
+        "Wash off after drying"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used externally as needed",
+    "precautions": [
+      "For external use only",
+      "Avoid contact with eyes",
+      "Test on small skin area first"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Temporary skin staining"],
+      "overuse": ["Skin dryness"],
+      "allergicReactions": ["Rare skin rash"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal skin-care resources",
+      "informationSource": "Traditional Ayurveda cosmetic texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  
+  {
+    "commonName": "Guggulu",
+    "scientificName": "Commiphora wightii",
+    "localName": "Indian Bdellium",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Resin"],
+    "medicinalUses": {
+      "primaryUses": ["Joint support", "Anti-inflammatory"],
+      "conditionsTreated": ["Joint pain", "Arthritis", "Obesity"]
+    },
+    "howToUse": {
+      "method": "Purified resin preparation",
+      "steps": [
+        "Collect natural Guggulu resin",
+        "Purify traditionally as per classical methods",
+        "Use in prepared formulations",
+        "Consume only in small quantities",
+        "Follow traditional guidance"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily in formulations",
+    "precautions": [
+      "Avoid use during pregnancy",
+      "Not recommended for children",
+      "Avoid long-term unsupervised use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Skin rash"],
+      "overuse": ["Stomach irritation"],
+      "allergicReactions": ["Rare allergic reaction"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal resin gallery",
+      "informationSource": "Ayurveda joint-care texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Shallaki",
+    "scientificName": "Boswellia serrata",
+    "localName": "Indian Frankincense",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Resin"],
+    "medicinalUses": {
+      "primaryUses": ["Joint health", "Anti-inflammatory"],
+      "conditionsTreated": ["Arthritis", "Joint stiffness", "Muscle pain"]
+    },
+    "howToUse": {
+      "method": "Resin powder",
+      "steps": [
+        "Collect Shallaki resin",
+        "Dry and grind into powder",
+        "Use in traditional formulations",
+        "Consume in small quantities",
+        "Avoid excessive use"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid during pregnancy",
+      "Use cautiously in stomach sensitivity"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Acidity"],
+      "overuse": ["Nausea"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH joint-care herb gallery",
+      "informationSource": "Ayurveda musculoskeletal texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Nirgundi",
+    "scientificName": "Vitex negundo",
+    "localName": "Five-Leaved Chaste Tree",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Leaves"],
+    "medicinalUses": {
+      "primaryUses": ["Pain relief", "Anti-inflammatory"],
+      "conditionsTreated": ["Joint pain", "Muscle pain", "Swelling"]
+    },
+    "howToUse": {
+      "method": "Leaf paste or decoction",
+      "steps": [
+        "Wash fresh Nirgundi leaves",
+        "Crush to make paste or boil for decoction",
+        "Apply paste externally or consume decoction traditionally",
+        "Use warm preparation",
+        "Apply or consume in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid internal use during pregnancy",
+      "Use cautiously in children"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Skin irritation"],
+      "overuse": ["Digestive upset"],
+      "allergicReactions": ["Rare skin allergy"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH pain-relief herb resources",
+      "informationSource": "Ayurveda pain management texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Eranda",
+    "scientificName": "Ricinus communis",
+    "localName": "Castor",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Seeds", "Oil"],
+    "medicinalUses": {
+      "primaryUses": ["Laxative", "Pain relief"],
+      "conditionsTreated": ["Constipation", "Joint pain", "Inflammation"]
+    },
+    "howToUse": {
+      "method": "Oil application or traditional use",
+      "steps": [
+        "Extract castor oil from seeds",
+        "Warm the oil slightly",
+        "Apply externally on affected area",
+        "Massage gently",
+        "Avoid raw seed consumption"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used externally as needed",
+    "precautions": [
+      "Never consume raw seeds",
+      "Avoid internal use without guidance",
+      "Avoid during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Skin irritation"],
+      "overuse": ["Severe digestive upset if misused"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH oil therapy resources",
+      "informationSource": "Ayurveda Panchakarma texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Rasna",
+    "scientificName": "Pluchea lanceolata",
+    "localName": "Rasna",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Leaves", "Root"],
+    "medicinalUses": {
+      "primaryUses": ["Joint mobility support", "Pain relief"],
+      "conditionsTreated": ["Joint stiffness", "Back pain", "Muscle pain"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Wash Rasna leaves or roots",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume warm",
+        "Use in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive use",
+      "Consult practitioner for long-term use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Dry mouth"],
+      "overuse": ["Digestive discomfort"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH musculoskeletal herb gallery",
+      "informationSource": "Ayurveda joint-health literature"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Arjuna",
+    "scientificName": "Terminalia arjuna",
+    "localName": "Arjun",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Bark"],
+    "medicinalUses": {
+      "primaryUses": ["Heart support", "Circulatory health"],
+      "conditionsTreated": ["Weak heart muscles", "Chest discomfort", "High blood pressure"]
+    },
+    "howToUse": {
+      "method": "Bark decoction",
+      "steps": [
+        "Dry Arjuna bark in shade",
+        "Break into small pieces",
+        "Boil in water for 10–15 minutes",
+        "Strain the liquid",
+        "Consume after cooling in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner if on heart medication"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach discomfort"],
+      "overuse": ["Constipation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH medicinal tree gallery",
+      "informationSource": "Ayurveda cardiology texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Punarnava",
+    "scientificName": "Boerhavia diffusa",
+    "localName": "Hogweed",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Whole plant"],
+    "medicinalUses": {
+      "primaryUses": ["Kidney support", "Anti-inflammatory"],
+      "conditionsTreated": ["Water retention", "Swelling", "Urinary disorders"]
+    },
+    "howToUse": {
+      "method": "Decoction",
+      "steps": [
+        "Wash Punarnava plant thoroughly",
+        "Cut into small pieces",
+        "Boil in water for 10 minutes",
+        "Strain the liquid",
+        "Consume warm in moderation"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner for long-term use"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Nausea"],
+      "overuse": ["Low blood pressure"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH kidney-care herb resources",
+      "informationSource": "Ayurveda urinary system texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+
+  {
+    "commonName": "Daruharidra",
+    "scientificName": "Berberis aristata",
+    "localName": "Tree Turmeric",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Shrub",
+    "partsUsed": ["Stem", "Root"],
+    "medicinalUses": {
+      "primaryUses": ["Liver support", "Skin cleansing"],
+      "conditionsTreated": ["Skin disorders", "Liver weakness", "Infections"]
+    },
+    "howToUse": {
+      "method": "Decoction or paste",
+      "steps": [
+        "Wash Daruharidra stem or root",
+        "Dry and crush into small pieces",
+        "Boil in water to prepare decoction",
+        "Allow to cool",
+        "Consume or apply externally as needed"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily or as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Consult practitioner during pregnancy"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Bitter taste"],
+      "overuse": ["Digestive irritation"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH herbal medicine database",
+      "informationSource": "Ayurveda liver and skin texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  {
+    "commonName": "Kutki",
+    "scientificName": "Picrorhiza kurroa",
+    "localName": "Katuki",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Herb",
+    "partsUsed": ["Rhizome"],
+    "medicinalUses": {
+      "primaryUses": ["Liver detoxification", "Digestive support"],
+      "conditionsTreated": ["Liver disorders", "Poor digestion", "Fever"]
+    },
+    "howToUse": {
+      "method": "Powder or decoction",
+      "steps": [
+        "Dry Kutki rhizome",
+        "Grind into fine powder or boil in water",
+        "Prepare mild decoction if boiling",
+        "Allow to cool",
+        "Consume in small quantity"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used once daily",
+    "precautions": [
+      "Avoid excessive intake",
+      "Not recommended during pregnancy",
+      "Use cautiously in children"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Loose stools"],
+      "overuse": ["Abdominal pain"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH Himalayan herb gallery",
+      "informationSource": "Ayurveda hepatology texts"
+    },
+    "language": ["English", "Hindi"]
+  },
+
+
+
+  
+  {
+    "commonName": "Kokum",
+    "scientificName": "Garcinia indica",
+    "localName": "Kokam",
+    "ayushSystem": "Ayurveda",
+    "plantType": "Tree",
+    "partsUsed": ["Fruit rind"],
+    "medicinalUses": {
+      "primaryUses": ["Cooling agent", "Digestive aid"],
+      "conditionsTreated": ["Acidity", "Heat exhaustion", "Indigestion"]
+    },
+    "howToUse": {
+      "method": "Infused drink",
+      "steps": [
+        "Soak dried kokum rind in water",
+        "Allow it to infuse for several hours",
+        "Strain the liquid",
+        "Add water if required",
+        "Consume as a cooling drink"
+      ]
+    },
+    "generalUsageFrequency": "Traditionally used as needed",
+    "precautions": [
+      "Avoid excessive intake",
+      "Use cautiously in low blood pressure"
+    ],
+    "possibleSideEffects": {
+      "mild": ["Stomach discomfort"],
+      "overuse": ["Acidity"],
+      "allergicReactions": ["Rare"]
+    },
+    "disclaimer": "This information is provided for educational purposes only and is not a substitute for professional medical advice.",
+    "mediaAndReference": {
+      "imageSource": "AYUSH coastal herb resources",
+      "informationSource": "Traditional Ayurveda dietary texts"
+    },
+    "language": ["English", "Hindi"]
+  }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

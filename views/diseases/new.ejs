@@ -1,0 +1,211 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="new-disease-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div class="form-card">
+
+                    <h1 class="text-center mb-4">
+
+                        🩺 Add New Disease
+
+                    </h1>
+
+                    <form action="/diseases" method="POST" class="needs-validation"
+novalidate>
+
+                        <!-- Disease Name -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Disease Name
+
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="disease[name]"
+                                placeholder="Cold"
+                                required
+                            >
+
+                        </div>
+
+                        <!-- Category -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Disease Category
+
+                            </label>
+
+                            <select
+                                class="form-select"
+                                name="disease[category]"
+                            >
+
+                                <option selected disabled>
+
+                                    Select Category
+
+                                </option>
+
+                                <option>Respiratory</option>
+
+                                <option>Digestive</option>
+
+                                <option>Skin</option>
+
+                                <option>Mental Health</option>
+
+                                <option>Lifestyle</option>
+
+                                <option>Immunity</option>
+
+                                <option>General</option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- Description -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Description
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="4"
+                                name="disease[description]"
+                                placeholder="Write a short description..."
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Symptoms -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Symptoms
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[symptoms]"
+                                placeholder="Fever, Cough, Headache..."
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Recommended Plants -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Recommended Medicinal Plants
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[recommendedPlants]"
+                                placeholder="Tulsi, Ginger, Amla..."
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Prevention -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Prevention
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[prevention]"
+                                placeholder="Maintain hygiene..."
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Lifestyle -->
+
+                        <div class="mb-4">
+
+                            <label class="form-label">
+
+                                Lifestyle Recommendations
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[lifestyle]"
+                                placeholder="Drink plenty of water..."
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Buttons -->
+
+                        <div class="text-center">
+
+                            <button
+                                class="btn btn-success btn-lg me-3"
+                            >
+
+                                <i class="fa-solid fa-plus"></i>
+
+                                Add Disease
+
+                            </button>
+
+                            <a
+                                href="/diseases"
+                                class="btn btn-secondary btn-lg"
+                            >
+
+                                Cancel
+
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

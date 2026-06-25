@@ -1,0 +1,195 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="show-disease-section">
+
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10">
+
+                <div class="card border-0 shadow-lg rounded-4">
+
+                    <div class="card-body p-5">
+
+                        <!-- Disease Title -->
+
+                        <div class="text-center mb-5">
+
+                            <i class="fa-solid fa-notes-medical disease-show-icon"></i>
+
+                            <h1 class="mt-3">
+
+                                <%= disease.name %>
+
+                            </h1>
+
+                            <span class="badge bg-success fs-6">
+
+                                <%= disease.category %>
+
+                            </span>
+
+                        </div>
+
+                        <!-- Description -->
+
+                        <h3 class="section-heading">
+
+                            📖 Description
+
+                        </h3>
+
+                        <p>
+
+                            <%= disease.description %>
+
+                        </p>
+
+                        <hr>
+
+                        <!-- Symptoms -->
+
+                        <h3 class="section-heading">
+
+                            🤒 Symptoms
+
+                        </h3>
+
+                        <ul>
+
+                            <% disease.symptoms.forEach(symptom => { %>
+
+                                <li><%= symptom %></li>
+
+                            <% }) %>
+
+                        </ul>
+
+                        <hr>
+
+                        <!-- Recommended Plants -->
+
+                        <h3 class="section-heading">
+
+                            🌿 Recommended Medicinal Plants
+
+                        </h3>
+
+                        <div class="mb-4">
+
+                            <% disease.recommendedPlants.forEach(plant => { %>
+
+                                <span class="badge bg-success me-2 mb-2 p-2">
+
+                                    <%= plant %>
+
+                                </span>
+
+                            <% }) %>
+
+                        </div>
+
+                        <hr>
+
+                        <!-- Prevention -->
+
+                        <h3 class="section-heading">
+
+                            🛡 Prevention
+
+                        </h3>
+
+                        <ul>
+
+                            <% disease.prevention.forEach(item => { %>
+
+                                <li><%= item %></li>
+
+                            <% }) %>
+
+                        </ul>
+
+                        <hr>
+
+                        <!-- Lifestyle -->
+
+                        <h3 class="section-heading">
+
+                            🏃 Lifestyle Recommendations
+
+                        </h3>
+
+                        <ul>
+
+                            <% disease.lifestyle.forEach(item => { %>
+
+                                <li><%= item %></li>
+
+                            <% }) %>
+
+                        </ul>
+
+                        <hr>
+
+                        <!-- Disclaimer -->
+
+                        <div class="alert alert-warning">
+
+                            <strong>Medical Disclaimer:</strong>
+
+                            This information is provided for educational
+                            purposes only. Please consult a qualified
+                            healthcare professional before using any
+                            herbal remedies or starting treatment.
+
+                        </div>
+
+                        <!-- Buttons -->
+
+                        <% if(currUser){ %>
+
+                        <div class="mt-4">
+
+                            <a
+                                href="/diseases/<%= disease._id %>/edit"
+                                class="btn btn-warning me-3"
+                            >
+
+                                <i class="fa-solid fa-pen-to-square"></i>
+
+                                Edit
+
+                            </a>
+
+                            <form
+                                action="/diseases/<%= disease._id %>?_method=DELETE"
+                                method="POST"
+                                class="d-inline"
+                            >
+
+                                <button class="btn btn-danger">
+
+                                    <i class="fa-solid fa-trash"></i>
+
+                                    Delete
+
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                        <% } %>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

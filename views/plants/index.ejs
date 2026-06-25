@@ -1,0 +1,128 @@
+<%- layout("layouts/boilerplate") %>
+
+<section class="plants-page">
+
+    <div class="container">
+
+        <!-- Heading -->
+
+        <div class="page-heading text-center">
+
+            <h1>
+                🌿 Medicinal Plants
+            </h1>
+
+            <p>
+                Explore India's traditional medicinal plants along with
+                their scientific names, medicinal uses and health benefits.
+            </p>
+
+        </div>
+
+        <!-- Add Plant Button -->
+
+        <% if(currUser){ %>
+
+            <div class="text-end mb-4">
+
+                <a href="/plants/new" class="btn btn-success">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Add New Plant
+
+                </a>
+
+            </div>
+
+        <% } %>
+
+
+        <!-- Plant Cards -->
+
+        <div class="row g-4">
+
+            <% for(let plant of allPlants){ %>
+
+            <div class="col-lg-4 col-md-6">
+
+                <div class="card plant-index-card h-100">
+
+                    <img
+                        src="<%= plant.image || '/images/default-plant.jpg' %>"
+                        class="card-img-top plant-image"
+                        alt="<%= plant.commonName %>"
+                    >
+
+                    <div class="card-body">
+
+                        <h3 class="plant-name">
+
+                            <%= plant.commonName %>
+
+                        </h3>
+
+                        <p class="scientific-name">
+
+                            <em>
+
+                                <%= plant.scientificName %>
+
+                            </em>
+
+                        </p>
+
+                        <span class="badge bg-success mb-3">
+
+                            <%= plant.plantType %>
+
+                        </span>
+
+                        <p>
+
+                            <strong>Local Name:</strong>
+
+                            <%= plant.localName %>
+
+                        </p>
+
+                        <p>
+
+                            <strong>AYUSH System:</strong>
+
+                            <%= plant.ayushSystem %>
+
+                        </p>
+
+                        <p class="text-muted">
+
+                            <%= plant.medicinalUses.primaryUses[0] %>
+
+                        </p>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0">
+
+                        <a
+                            href="/plants/<%= plant._id %>"
+                            class="btn btn-success w-100"
+                        >
+
+                            View Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <% } %>
+
+        </div>
+
+    </div>
+
+</section>

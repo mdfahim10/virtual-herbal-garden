@@ -1,0 +1,123 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+            
+            <img src="/images/logo.png" alt="Virtual Herbal Garden" class="logo">
+            <img src="/images/logotext.png" alt="Virtual Herbal Garden" class="logo_text">
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+
+            <!-- Left Navigation -->
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/plants">
+                        <i class="fa-solid fa-seedling"></i>
+                        Plants
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/diseases">
+                        <i class="fa-solid fa-notes-medical"></i>
+                        Diseases
+                    </a>
+                </li>
+
+                <% if(typeof currUser !== "undefined" && currUser && currUser.role === "admin"){ %>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/dashboard">
+                        <i class="fa-solid fa-chart-line"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <% } %>
+
+            </ul>
+
+            <!-- Search Bar -->
+            <form
+                class="d-flex search-bar me-3"
+                action="/plants"
+                method="GET"
+            >
+
+                <input
+                    class="form-control search-input"
+                    type="search"
+                    name="search"
+                    placeholder="Search medicinal plants..."
+                >
+
+                <button class="btn search-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </form>
+
+            <!-- Right Navigation -->
+            <ul class="navbar-nav">
+
+                <% if(typeof currUser === "undefined" || !currUser){ %>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">
+                        <i class="fa-solid fa-user-plus"></i>
+                        Sign Up
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        Login
+                    </a>
+                </li>
+
+                <% } %>
+
+                <% if(currUser){ %>
+
+                <li class="nav-item">
+                    <span class="nav-link text-success fw-bold">
+                        <i class="fa-solid fa-user"></i>
+                        <%= currUser.username %>
+                    </span>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-danger" href="/logout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </a>
+                </li>
+
+                <% } %>
+
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
