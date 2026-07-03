@@ -1,0 +1,573 @@
+[
+{
+    "diseaseName": "Common Cold",
+    "description": "The common cold is a viral infection affecting the upper respiratory tract, including the nose and throat. It usually resolves within one to two weeks but can cause discomfort and temporary weakness.",
+    "symptoms": [
+        "Sneezing",
+        "Runny nose",
+        "Nasal congestion",
+        "Sore throat",
+        "Mild fever",
+        "Cough"
+    ],
+    "causes": [
+        "Rhinovirus infection",
+        "Weak immune system",
+        "Cold weather",
+        "Close contact with infected individuals"
+    ],
+    "prevention": [
+        "Wash hands regularly",
+        "Drink plenty of water",
+        "Eat nutritious food",
+        "Maintain good personal hygiene"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+
+{
+    "diseaseName": "Fever",
+    "description": "Fever is a temporary increase in body temperature caused by infections or inflammation. It is a natural immune response to fight disease-causing microorganisms.",
+    "symptoms": [
+        "High body temperature",
+        "Headache",
+        "Body pain",
+        "Sweating",
+        "Weakness",
+        "Chills"
+    ],
+    "causes": [
+        "Viral infection",
+        "Bacterial infection",
+        "Inflammation",
+        "Heat exhaustion"
+    ],
+    "prevention": [
+        "Drink clean water",
+        "Maintain hygiene",
+        "Take vaccinations",
+        "Eat balanced meals"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+
+{
+    "diseaseName": "Diabetes",
+    "description": "Diabetes mellitus is a chronic metabolic disorder characterized by elevated blood glucose levels due to insufficient insulin production or ineffective insulin action.",
+    "symptoms": [
+        "Frequent urination",
+        "Excessive thirst",
+        "Increased hunger",
+        "Fatigue",
+        "Blurred vision",
+        "Slow wound healing"
+    ],
+    "causes": [
+        "Insulin resistance",
+        "Genetics",
+        "Obesity",
+        "Sedentary lifestyle"
+    ],
+    "prevention": [
+        "Exercise regularly",
+        "Maintain healthy weight",
+        "Reduce sugar intake",
+        "Regular blood sugar checkups"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+
+{
+    "diseaseName": "Hypertension",
+    "description": "Hypertension is a condition where blood pressure remains consistently higher than normal, increasing the risk of heart disease and stroke.",
+    "symptoms": [
+        "Headache",
+        "Dizziness",
+        "Chest pain",
+        "Blurred vision",
+        "Shortness of breath"
+    ],
+    "causes": [
+        "High salt intake",
+        "Stress",
+        "Obesity",
+        "Smoking"
+    ],
+    "prevention": [
+        "Reduce salt intake",
+        "Exercise daily",
+        "Manage stress",
+        "Avoid smoking"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+
+{
+    "diseaseName": "Asthma",
+    "description": "Asthma is a chronic respiratory disease that causes inflammation and narrowing of the airways, leading to breathing difficulties.",
+    "symptoms": [
+        "Shortness of breath",
+        "Wheezing",
+        "Chest tightness",
+        "Persistent cough"
+    ],
+    "causes": [
+        "Allergy",
+        "Dust",
+        "Air pollution",
+        "Genetics"
+    ],
+    "prevention": [
+        "Avoid allergens",
+        "Maintain clean surroundings",
+        "Exercise regularly",
+        "Avoid smoking"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Arthritis",
+    "description": "Arthritis is a condition that causes inflammation, pain, stiffness, and swelling in one or more joints. It commonly affects older adults but can occur at any age.",
+    "symptoms": [
+        "Joint pain",
+        "Joint stiffness",
+        "Swelling",
+        "Reduced mobility",
+        "Redness around joints"
+    ],
+    "causes": [
+        "Aging",
+        "Joint injury",
+        "Autoimmune disorders",
+        "Obesity"
+    ],
+    "prevention": [
+        "Maintain healthy weight",
+        "Exercise regularly",
+        "Eat anti-inflammatory foods",
+        "Avoid joint injuries"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Migraine",
+    "description": "Migraine is a neurological disorder characterized by recurrent headaches that are often accompanied by nausea, vomiting, and sensitivity to light or sound.",
+    "symptoms": [
+        "Severe headache",
+        "Nausea",
+        "Vomiting",
+        "Sensitivity to light",
+        "Sensitivity to sound"
+    ],
+    "causes": [
+        "Stress",
+        "Hormonal changes",
+        "Lack of sleep",
+        "Certain foods",
+        "Genetics"
+    ],
+    "prevention": [
+        "Sleep regularly",
+        "Stay hydrated",
+        "Manage stress",
+        "Avoid known triggers"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Skin Infection",
+    "description": "Skin infections are caused by bacteria, fungi, viruses, or parasites affecting the skin, leading to redness, itching, swelling, and discomfort.",
+    "symptoms": [
+        "Redness",
+        "Itching",
+        "Swelling",
+        "Pain",
+        "Skin rash"
+    ],
+    "causes": [
+        "Bacterial infection",
+        "Fungal infection",
+        "Poor hygiene",
+        "Weak immune system"
+    ],
+    "prevention": [
+        "Maintain personal hygiene",
+        "Keep skin dry",
+        "Avoid sharing personal items",
+        "Clean wounds properly"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Acne",
+    "description": "Acne is a common skin condition in which hair follicles become clogged with oil and dead skin cells, resulting in pimples, blackheads, and inflammation.",
+    "symptoms": [
+        "Pimples",
+        "Blackheads",
+        "Whiteheads",
+        "Red inflamed skin",
+        "Oily skin"
+    ],
+    "causes": [
+        "Hormonal imbalance",
+        "Excess oil production",
+        "Bacteria",
+        "Stress"
+    ],
+    "prevention": [
+        "Wash face regularly",
+        "Avoid oily cosmetics",
+        "Eat a balanced diet",
+        "Do not squeeze pimples"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Indigestion",
+    "description": "Indigestion, also known as dyspepsia, is a digestive disorder that causes discomfort or pain in the upper abdomen, often after eating.",
+    "symptoms": [
+        "Stomach pain",
+        "Bloating",
+        "Nausea",
+        "Heartburn",
+        "Feeling full quickly"
+    ],
+    "causes": [
+        "Overeating",
+        "Spicy foods",
+        "Stress",
+        "Irregular eating habits"
+    ],
+    "prevention": [
+        "Eat slowly",
+        "Avoid overeating",
+        "Reduce spicy foods",
+        "Exercise regularly"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Constipation",
+    "description": "Constipation is a digestive condition characterized by infrequent bowel movements or difficulty passing stools. It often results from poor diet, dehydration, or lack of physical activity.",
+    "symptoms": [
+        "Hard stools",
+        "Difficulty passing stool",
+        "Abdominal pain",
+        "Bloating",
+        "Feeling of incomplete bowel movement"
+    ],
+    "causes": [
+        "Low fiber diet",
+        "Dehydration",
+        "Lack of exercise",
+        "Ignoring bowel urges"
+    ],
+    "prevention": [
+        "Eat fiber-rich foods",
+        "Drink plenty of water",
+        "Exercise daily",
+        "Maintain regular bowel habits"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Diarrhea",
+    "description": "Diarrhea is a condition involving frequent loose or watery stools. It is usually caused by infections, contaminated food, or digestive disorders.",
+    "symptoms": [
+        "Loose stools",
+        "Frequent bowel movements",
+        "Abdominal cramps",
+        "Nausea",
+        "Dehydration"
+    ],
+    "causes": [
+        "Viral infection",
+        "Bacterial infection",
+        "Food poisoning",
+        "Contaminated water"
+    ],
+    "prevention": [
+        "Drink clean water",
+        "Wash hands before eating",
+        "Eat hygienic food",
+        "Avoid contaminated food"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Insomnia",
+    "description": "Insomnia is a sleep disorder that makes it difficult to fall asleep, stay asleep, or get restful sleep, affecting daily health and productivity.",
+    "symptoms": [
+        "Difficulty falling asleep",
+        "Frequent waking at night",
+        "Daytime fatigue",
+        "Poor concentration",
+        "Irritability"
+    ],
+    "causes": [
+        "Stress",
+        "Anxiety",
+        "Depression",
+        "Excessive caffeine intake",
+        "Irregular sleep schedule"
+    ],
+    "prevention": [
+        "Maintain a regular sleep schedule",
+        "Avoid caffeine before bedtime",
+        "Practice meditation",
+        "Limit screen time at night"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Anemia",
+    "description": "Anemia is a condition in which the body lacks enough healthy red blood cells or hemoglobin to carry sufficient oxygen to tissues.",
+    "symptoms": [
+        "Fatigue",
+        "Weakness",
+        "Pale skin",
+        "Shortness of breath",
+        "Dizziness"
+    ],
+    "causes": [
+        "Iron deficiency",
+        "Vitamin B12 deficiency",
+        "Blood loss",
+        "Chronic diseases"
+    ],
+    "prevention": [
+        "Eat iron-rich foods",
+        "Consume Vitamin C",
+        "Regular health checkups",
+        "Maintain balanced nutrition"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Obesity",
+    "description": "Obesity is a condition characterized by excessive body fat accumulation that increases the risk of diabetes, heart disease, and other health problems.",
+    "symptoms": [
+        "Excess body weight",
+        "Breathlessness",
+        "Fatigue",
+        "Joint pain",
+        "Difficulty in physical activities"
+    ],
+    "causes": [
+        "High-calorie diet",
+        "Physical inactivity",
+        "Genetics",
+        "Hormonal imbalance"
+    ],
+    "prevention": [
+        "Exercise regularly",
+        "Eat a balanced diet",
+        "Limit sugary foods",
+        "Monitor body weight"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Liver Disorder",
+    "description": "Liver disorders refer to conditions that affect the normal functioning of the liver, including fatty liver disease, hepatitis, and liver inflammation. A healthy liver is essential for detoxification, digestion, and metabolism.",
+    "symptoms": [
+        "Fatigue",
+        "Yellowing of skin (Jaundice)",
+        "Abdominal pain",
+        "Loss of appetite",
+        "Dark urine"
+    ],
+    "causes": [
+        "Excessive alcohol consumption",
+        "Viral hepatitis",
+        "Fatty liver",
+        "Obesity",
+        "Certain medications"
+    ],
+    "prevention": [
+        "Avoid excessive alcohol",
+        "Maintain healthy weight",
+        "Eat a balanced diet",
+        "Vaccination against hepatitis",
+        "Exercise regularly"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Urinary Tract Infection",
+    "description": "A urinary tract infection (UTI) is an infection affecting any part of the urinary system including kidneys, bladder, ureters, and urethra. Most infections involve the lower urinary tract.",
+    "symptoms": [
+        "Burning sensation during urination",
+        "Frequent urination",
+        "Cloudy urine",
+        "Pelvic pain",
+        "Strong urge to urinate"
+    ],
+    "causes": [
+        "Bacterial infection",
+        "Poor personal hygiene",
+        "Holding urine for long periods",
+        "Kidney stones"
+    ],
+    "prevention": [
+        "Drink plenty of water",
+        "Maintain personal hygiene",
+        "Do not hold urine",
+        "Urinate after sexual activity"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Stress",
+    "description": "Stress is the body's natural response to physical, emotional, or mental challenges. Chronic stress can negatively affect both physical and mental health if left unmanaged.",
+    "symptoms": [
+        "Headache",
+        "Fatigue",
+        "Anxiety",
+        "Poor concentration",
+        "Difficulty sleeping"
+    ],
+    "causes": [
+        "Work pressure",
+        "Financial problems",
+        "Relationship issues",
+        "Health concerns"
+    ],
+    "prevention": [
+        "Practice meditation",
+        "Exercise regularly",
+        "Get adequate sleep",
+        "Maintain work-life balance"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Skin Allergy",
+    "description": "Skin allergy is an immune system reaction that causes redness, itching, swelling, or rashes after exposure to allergens such as pollen, chemicals, food, or medications.",
+    "symptoms": [
+        "Itching",
+        "Skin rash",
+        "Redness",
+        "Swelling",
+        "Dry skin"
+    ],
+    "causes": [
+        "Food allergy",
+        "Dust",
+        "Pollen",
+        "Cosmetics",
+        "Certain medicines"
+    ],
+    "prevention": [
+        "Avoid allergens",
+        "Use mild skin products",
+        "Keep skin moisturized",
+        "Wear protective clothing"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+},
+{
+    "diseaseName": "Gastric Ulcer",
+    "description": "A gastric ulcer is a sore that develops on the lining of the stomach due to excess stomach acid, bacterial infection, or prolonged use of certain medications.",
+    "symptoms": [
+        "Burning stomach pain",
+        "Bloating",
+        "Nausea",
+        "Heartburn",
+        "Loss of appetite"
+    ],
+    "causes": [
+        "Helicobacter pylori infection",
+        "Long-term painkiller use",
+        "Smoking",
+        "Excess stomach acid"
+    ],
+    "prevention": [
+        "Eat meals on time",
+        "Avoid excessive spicy foods",
+        "Limit alcohol consumption",
+        "Avoid smoking"
+    ],
+    "recommendedPlants": [],
+    "image": {
+        "url": "/images/default-disease.jpg",
+        "filename": "default-disease"
+    }
+}
+]

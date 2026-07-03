@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
-  },
+  "start": "node app.js",
+  "dev": "nodemon app.js",
+  "seed:plants": "node init/initPlants.js",
+  "seed:diseases": "node init/initDiseases.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
