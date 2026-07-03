@@ -2,118 +2,114 @@
 
 <section class="diseases-page">
 
-    <div class="container">
+<div class="container">
 
-        <!-- Heading -->
+<div class="page-heading text-center">
 
-        <div class="page-heading text-center">
+<h1>
+🩺 Diseases & Natural Remedies
+</h1>
 
-            <h1>
-                🩺 Diseases & Natural Remedies
-            </h1>
+<p>
+Explore common diseases and discover medicinal plants used in traditional medicine.
+</p>
 
-            <p>
-                Explore common health conditions and discover medicinal plants
-                traditionally used in Ayurveda and other AYUSH systems.
-            </p>
+</div>
 
-        </div>
+<% if(currUser){ %>
 
-        <!-- Add Disease Button -->
+<div class="text-end mb-4">
 
-        <% if(currUser){ %>
+<a href="/diseases/new" class="btn btn-success">
 
-            <div class="text-end mb-4">
+<i class="fa-solid fa-plus"></i>
 
-                <a href="/diseases/new" class="btn btn-success">
+Add New Disease
 
-                    <i class="fa-solid fa-plus"></i>
+</a>
 
-                    Add New Disease
+</div>
 
-                </a>
+<% } %>
 
-            </div>
+<div class="row g-4">
 
-        <% } %>
+<% allDiseases.forEach(disease=>{ %>
 
-        <!-- Disease Cards -->
+<div class="col-lg-4 col-md-6">
 
-        <div class="row g-4">
+<div class="card disease-index-card h-100 shadow-sm">
 
-            <% for(let disease of allDiseases){ %>
+<div class="card-body">
 
-            <div class="col-lg-4 col-md-6">
+<img
+    src="<%= disease.image?.url || '/images/default-disease.jpg' %>"
+    class="card-img-top disease-image"
+    alt="<%= disease.diseaseName %>"
+>
 
-                <div class="card disease-index-card h-100">
+<h3 class="text-center">
 
-                    <div class="card-body">
+<%= disease.diseaseName %>
 
-                        <div class="text-center">
+</h3>
 
-                            <i class="fa-solid fa-notes-medical disease-icon"></i>
+<p class="text-muted">
 
-                            <h3 class="mt-3">
+<%= disease.description.substring(0,120) %>...
 
-                                <%= disease.name %>
+</p>
 
-                            </h3>
+<hr>
 
-                        </div>
+<strong>Symptoms</strong>
 
-                        <hr>
+<ul>
 
-                        <p>
+<% disease.symptoms.slice(0,3).forEach(symptom=>{ %>
 
-                            <strong>Category:</strong>
+<li><%= symptom %></li>
 
-                            <span class="badge bg-success">
+<% }) %>
 
-                                <%= disease.category %>
+</ul>
 
-                            </span>
+<p>
 
-                        </p>
+🌿
 
-                        <p>
+<strong>
 
-                            <strong>Symptoms:</strong>
+<%= disease.recommendedPlants.length %>
 
-                            <%= disease.symptoms.slice(0,3).join(", ") %>
+Recommended Plants
 
-                        </p>
+</strong>
 
-                        <p>
+</p>
 
-                            <strong>Recommended Plants:</strong>
+</div>
 
-                            <%= disease.recommendedPlants.length %>
+<div class="card-footer bg-white border-0">
 
-                        </p>
+<a
+href="/diseases/<%= disease._id %>"
+class="btn btn-success w-100">
 
-                    </div>
+View Details
 
-                    <div class="card-footer bg-white border-0">
+</a>
 
-                        <a
-                            href="/diseases/<%= disease._id %>"
-                            class="btn btn-success w-100"
-                        >
+</div>
 
-                            View Details
+</div>
 
-                        </a>
+</div>
 
-                    </div>
+<% }) %>
 
-                </div>
+</div>
 
-            </div>
-
-            <% } %>
-
-        </div>
-
-    </div>
+</div>
 
 </section>

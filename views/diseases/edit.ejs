@@ -11,15 +11,15 @@
                 <div class="form-card">
 
                     <h1 class="text-center mb-4">
-
                         ✏️ Edit Disease
-
                     </h1>
 
                     <form
                         action="/diseases/<%= disease._id %>?_method=PUT"
-                        method="POST" class="needs-validation"
-novalidate
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="needs-validation"
+                        novalidate
                     >
 
                         <!-- Disease Name -->
@@ -27,72 +27,16 @@ novalidate
                         <div class="mb-3">
 
                             <label class="form-label">
-
                                 Disease Name
-
                             </label>
 
                             <input
                                 type="text"
                                 class="form-control"
-                                name="disease[name]"
-                                value="<%= disease.name %>"
+                                name="disease[diseaseName]"
+                                value="<%= disease.diseaseName %>"
                                 required
                             >
-
-                        </div>
-
-                        <!-- Category -->
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-
-                                Disease Category
-
-                            </label>
-
-                            <select
-                                class="form-select"
-                                name="disease[category]"
-                            >
-
-                                <option value="Respiratory"
-                                    <%= disease.category==="Respiratory" ? "selected" : "" %>>
-                                    Respiratory
-                                </option>
-
-                                <option value="Digestive"
-                                    <%= disease.category==="Digestive" ? "selected" : "" %>>
-                                    Digestive
-                                </option>
-
-                                <option value="Skin"
-                                    <%= disease.category==="Skin" ? "selected" : "" %>>
-                                    Skin
-                                </option>
-
-                                <option value="Mental Health"
-                                    <%= disease.category==="Mental Health" ? "selected" : "" %>>
-                                    Mental Health
-                                </option>
-
-                                <option value="Lifestyle"
-                                    <%= disease.category==="Lifestyle" ? "selected" : "" %>>
-                                    Lifestyle
-                                </option>
-
-                                <option value="Immunity"
-                                    <%= disease.category==="Immunity" ? "selected" : "" %>>
-                                    Immunity
-                                </option>
-
-                                <option value="General"
-                                    <%= disease.category==="General" ? "selected" : "" %>>
-                                    General
-                                </option>
-
-                            </select>
 
                         </div>
 
@@ -101,9 +45,7 @@ novalidate
                         <div class="mb-3">
 
                             <label class="form-label">
-
                                 Description
-
                             </label>
 
                             <textarea
@@ -119,9 +61,7 @@ novalidate
                         <div class="mb-3">
 
                             <label class="form-label">
-
-                                Symptoms
-
+                                Symptoms (comma separated)
                             </label>
 
                             <textarea
@@ -132,21 +72,19 @@ novalidate
 
                         </div>
 
-                        <!-- Recommended Plants -->
+                        <!-- Causes -->
 
                         <div class="mb-3">
 
                             <label class="form-label">
-
-                                Recommended Medicinal Plants
-
+                                Causes (comma separated)
                             </label>
 
                             <textarea
                                 class="form-control"
                                 rows="3"
-                                name="disease[recommendedPlants]"
-                            ><%= disease.recommendedPlants.join(", ") %></textarea>
+                                name="disease[causes]"
+                            ><%= disease.causes.join(", ") %></textarea>
 
                         </div>
 
@@ -155,9 +93,7 @@ novalidate
                         <div class="mb-3">
 
                             <label class="form-label">
-
-                                Prevention
-
+                                Prevention (comma separated)
                             </label>
 
                             <textarea
@@ -168,21 +104,81 @@ novalidate
 
                         </div>
 
-                        <!-- Lifestyle -->
+                        <!-- Recommended Plants -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+                                Recommended Medicinal Plants
+                            </label>
+
+                            <select
+                                class="form-select"
+                                multiple
+                                name="disease[recommendedPlants]"
+                            >
+
+                                <% plants.forEach(plant => { %>
+
+                                    <option
+                                        value="<%= plant._id %>"
+                                        <%= disease.recommendedPlants.some(
+                                            p => p._id.equals(plant._id)
+                                        ) ? "selected" : "" %>
+                                    >
+
+                                        <%= plant.commonName %>
+
+                                    </option>
+
+                                <% }) %>
+
+                            </select>
+
+                            <small class="text-muted">
+                                Hold Ctrl (Windows) / Cmd (Mac) to select multiple plants.
+                            </small>
+
+                        </div>
+
+                        <!-- Current Image -->
+
+                        <% if(disease.image && disease.image.url){ %>
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+
+                                    Current Image
+
+                                </label>
+
+                                <br>
+
+                                <img
+                                    src="<%= disease.image.url %>"
+                                    class="img-thumbnail"
+                                    width="250"
+                                >
+
+                            </div>
+
+                        <% } %>
+
+                        <!-- Upload New Image -->
 
                         <div class="mb-4">
 
                             <label class="form-label">
-
-                                Lifestyle Recommendations
-
+                                Change Disease Image
                             </label>
 
-                            <textarea
+                            <input
+                                type="file"
                                 class="form-control"
-                                rows="3"
-                                name="disease[lifestyle]"
-                            ><%= disease.lifestyle.join(", ") %></textarea>
+                                name="diseaseImage"
+                                accept="image/*"
+                            >
 
                         </div>
 
@@ -190,9 +186,7 @@ novalidate
 
                         <div class="text-center">
 
-                            <button
-                                class="btn btn-success btn-lg me-3"
-                            >
+                            <button class="btn btn-success btn-lg me-3">
 
                                 <i class="fa-solid fa-floppy-disk"></i>
 

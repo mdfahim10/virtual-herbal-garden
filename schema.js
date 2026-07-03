@@ -64,21 +64,39 @@ module.exports.plantSchema = Joi.object({
 // Disease Validation Schema
 // ======================================
 
+// ======================================
+// Disease Validation Schema
+// ======================================
+
 module.exports.diseaseSchema = Joi.object({
 
     disease: Joi.object({
 
-        diseaseName: Joi.string().required(),
+        diseaseName: Joi.string()
+            .trim()
+            .required(),
 
-        description: Joi.string().required(),
+        description: Joi.string()
+            .required(),
 
-        symptoms: Joi.array().items(
-            Joi.string()
+        symptoms: Joi.string()
+            .allow("", null),
+
+        causes: Joi.string()
+            .allow("", null),
+
+        prevention: Joi.string()
+            .allow("", null),
+
+        recommendedPlants: Joi.alternatives().try(
+
+            Joi.array().items(
+            Joi.string().trim()
+            ),
+
+        Joi.string().trim().allow("", null)
+
         ),
-
-        recommendedPlants: Joi.array().items(
-            Joi.string()
-        )
 
     }).required()
 

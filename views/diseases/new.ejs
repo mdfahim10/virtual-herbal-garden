@@ -16,8 +16,13 @@
 
                     </h1>
 
-                    <form action="/diseases" method="POST" class="needs-validation"
-novalidate>
+                    <form
+                        action="/diseases"
+                        method="POST"
+                        enctype="multipart/form-data"
+                        class="needs-validation"
+                        novalidate
+                    >
 
                         <!-- Disease Name -->
 
@@ -32,49 +37,9 @@ novalidate>
                             <input
                                 type="text"
                                 class="form-control"
-                                name="disease[name]"
-                                placeholder="Cold"
+                                name="disease[diseaseName]"
                                 required
                             >
-
-                        </div>
-
-                        <!-- Category -->
-
-                        <div class="mb-3">
-
-                            <label class="form-label">
-
-                                Disease Category
-
-                            </label>
-
-                            <select
-                                class="form-select"
-                                name="disease[category]"
-                            >
-
-                                <option selected disabled>
-
-                                    Select Category
-
-                                </option>
-
-                                <option>Respiratory</option>
-
-                                <option>Digestive</option>
-
-                                <option>Skin</option>
-
-                                <option>Mental Health</option>
-
-                                <option>Lifestyle</option>
-
-                                <option>Immunity</option>
-
-                                <option>General</option>
-
-                            </select>
 
                         </div>
 
@@ -92,7 +57,7 @@ novalidate>
                                 class="form-control"
                                 rows="4"
                                 name="disease[description]"
-                                placeholder="Write a short description..."
+                                required
                             ></textarea>
 
                         </div>
@@ -104,6 +69,9 @@ novalidate>
                             <label class="form-label">
 
                                 Symptoms
+                                <small class="text-muted">
+                                    (Comma separated)
+                                </small>
 
                             </label>
 
@@ -111,7 +79,51 @@ novalidate>
                                 class="form-control"
                                 rows="3"
                                 name="disease[symptoms]"
-                                placeholder="Fever, Cough, Headache..."
+                                placeholder="Fever, Headache, Cough"
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Causes -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Causes
+                                <small class="text-muted">
+                                    (Comma separated)
+                                </small>
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[causes]"
+                                placeholder="Virus, Bacteria"
+                            ></textarea>
+
+                        </div>
+
+                        <!-- Prevention -->
+
+                        <div class="mb-3">
+
+                            <label class="form-label">
+
+                                Prevention
+                                <small class="text-muted">
+                                    (Comma separated)
+                                </small>
+
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="3"
+                                name="disease[prevention]"
+                                placeholder="Drink clean water, Wash hands"
                             ></textarea>
 
                         </div>
@@ -126,50 +138,48 @@ novalidate>
 
                             </label>
 
-                            <textarea
-                                class="form-control"
-                                rows="3"
+                            <select
+                                class="form-select"
                                 name="disease[recommendedPlants]"
-                                placeholder="Tulsi, Ginger, Amla..."
-                            ></textarea>
+                                multiple
+                            >
+
+                                <% plants.forEach(plant => { %>
+
+                                    <option value="<%= plant._id %>">
+
+                                        <%= plant.commonName %>
+
+                                    </option>
+
+                                <% }) %>
+
+                            </select>
+
+                            <small class="text-muted">
+
+                                Hold Ctrl (Windows) or Cmd (Mac) to select multiple plants.
+
+                            </small>
 
                         </div>
 
-                        <!-- Prevention -->
+                        <!-- Disease Image -->
 
                         <div class="mb-3">
 
                             <label class="form-label">
 
-                                Prevention
+                                Disease Image
 
                             </label>
 
-                            <textarea
+                            <input
+                                type="file"
                                 class="form-control"
-                                rows="3"
-                                name="disease[prevention]"
-                                placeholder="Maintain hygiene..."
-                            ></textarea>
-
-                        </div>
-
-                        <!-- Lifestyle -->
-
-                        <div class="mb-4">
-
-                            <label class="form-label">
-
-                                Lifestyle Recommendations
-
-                            </label>
-
-                            <textarea
-                                class="form-control"
-                                rows="3"
-                                name="disease[lifestyle]"
-                                placeholder="Drink plenty of water..."
-                            ></textarea>
+                                name="diseaseImage"
+                                accept="image/*"
+                            >
 
                         </div>
 
@@ -177,9 +187,7 @@ novalidate>
 
                         <div class="text-center">
 
-                            <button
-                                class="btn btn-success btn-lg me-3"
-                            >
+                            <button class="btn btn-success btn-lg me-3">
 
                                 <i class="fa-solid fa-plus"></i>
 
