@@ -1,6 +1,6 @@
 <%- layout("layouts/boilerplate") %>
 
-<section class="show-plant-section">
+<section class="show-plant-section py-5">
 
     <div class="container">
 
@@ -9,10 +9,10 @@
             <!-- Left Side -->
 
             <div class="col-lg-5">
-                
+
                 <img
                     src="<%= plant.image && plant.image.url ? plant.image.url : '/images/default-plant.jpg' %>"
-                    class="img-fluid show-image"
+                    class="img-fluid show-image rounded-4 shadow"
                     alt="<%= plant.commonName %>"
                 >
 
@@ -55,7 +55,7 @@
                         <th>Parts Used</th>
                         <td>
 
-                            <% plant.partsUsed.forEach(part=>{ %>
+                            <% plant.partsUsed.forEach(part => { %>
 
                                 <span class="badge bg-success me-2">
 
@@ -66,6 +66,7 @@
                             <% }) %>
 
                         </td>
+
                     </tr>
 
                 </table>
@@ -76,9 +77,9 @@
 
                 <ul>
 
-                    <% plant.medicinalUses.primaryUses.forEach(use=>{ %>
+                    <% plant.medicinalUses.primaryUses.forEach(use => { %>
 
-                    <li><%= use %></li>
+                        <li><%= use %></li>
 
                     <% }) %>
 
@@ -90,13 +91,85 @@
 
                 <ul>
 
-                    <% plant.medicinalUses.conditionsTreated.forEach(condition=>{ %>
+                    <% plant.medicinalUses.conditionsTreated.forEach(condition => { %>
 
-                    <li><%= condition %></li>
+                        <li><%= condition %></li>
 
                     <% }) %>
 
                 </ul>
+
+                <hr>
+
+                <!-- ====================================== -->
+                <!-- Related Diseases -->
+                <!-- ====================================== -->
+
+                <h3 class="mb-4">
+
+                    🦠 Related Diseases
+
+                </h3>
+
+                <% if(diseases && diseases.length){ %>
+
+                <div class="row">
+
+                    <% diseases.forEach(disease => { %>
+
+                    <div class="col-md-6 mb-4">
+
+                        <div class="card h-100 border-0 shadow-sm rounded-4">
+
+                            <img
+                                src="<%= disease.image.url %>"
+                                class="card-img-top"
+                                style="height:180px; object-fit:cover;"
+                                alt="<%= disease.diseaseName %>"
+                            >
+
+                            <div class="card-body">
+
+                                <h5>
+
+                                    <%= disease.diseaseName %>
+
+                                </h5>
+
+                                <p class="text-muted">
+
+                                    <%= disease.description.substring(0,100) %>...
+
+                                </p>
+
+                                <a
+                                    href="/diseases/<%= disease._id %>"
+                                    class="btn btn-success w-100"
+                                >
+
+                                    View Disease
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <% }) %>
+
+                </div>
+
+                <% } else { %>
+
+                <div class="alert alert-secondary">
+
+                    No diseases linked with this medicinal plant.
+
+                </div>
+
+                <% } %>
 
                 <hr>
 
@@ -105,6 +178,7 @@
                 <h5>
 
                     Method :
+
                     <span class="text-success">
 
                         <%= plant.howToUse.method %>
@@ -115,9 +189,9 @@
 
                 <ol>
 
-                    <% plant.howToUse.steps.forEach(step=>{ %>
+                    <% plant.howToUse.steps.forEach(step => { %>
 
-                    <li><%= step %></li>
+                        <li><%= step %></li>
 
                     <% }) %>
 
@@ -129,9 +203,9 @@
 
                 <ul>
 
-                    <% plant.precautions.forEach(item=>{ %>
+                    <% plant.precautions.forEach(item => { %>
 
-                    <li><%= item %></li>
+                        <li><%= item %></li>
 
                     <% }) %>
 
@@ -145,9 +219,9 @@
 
                 <ul>
 
-                    <% plant.possibleSideEffects.mild.forEach(item=>{ %>
+                    <% plant.possibleSideEffects.mild.forEach(item => { %>
 
-                    <li><%= item %></li>
+                        <li><%= item %></li>
 
                     <% }) %>
 
@@ -157,9 +231,9 @@
 
                 <ul>
 
-                    <% plant.possibleSideEffects.overuse.forEach(item=>{ %>
+                    <% plant.possibleSideEffects.overuse.forEach(item => { %>
 
-                    <li><%= item %></li>
+                        <li><%= item %></li>
 
                     <% }) %>
 
@@ -169,9 +243,9 @@
 
                 <ul>
 
-                    <% plant.possibleSideEffects.allergicReactions.forEach(item=>{ %>
+                    <% plant.possibleSideEffects.allergicReactions.forEach(item => { %>
 
-                    <li><%= item %></li>
+                        <li><%= item %></li>
 
                     <% }) %>
 

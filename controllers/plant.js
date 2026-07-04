@@ -1,3 +1,4 @@
+const Disease = require("../models/disease");
 const Plant = require("../models/plant");
 
 // ======================================
@@ -85,13 +86,20 @@ module.exports.showPlant = async (req, res) => {
 
     if (!plant) {
 
-        req.flash("error", "Plant does not exist!");
+        req.flash("error", "Plant not found!");
 
         return res.redirect("/plants");
 
     }
 
-    res.render("plants/show", { plant });
+    const diseases = await Disease.find({
+        recommendedPlants: plant._id
+    });
+
+    res.render("plants/show", {
+        plant,
+        diseases
+    });
 
 };
 
