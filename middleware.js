@@ -56,16 +56,55 @@ module.exports.isAdmin = (req, res, next) => {
 
 module.exports.validatePlant = (req, res, next) => {
 
+    const plant = req.body.plant;
+
+    const stringToArray = (value) => {
+
+        if (!value) return [];
+
+        if (Array.isArray(value)) return value;
+
+        return value
+            .split(",")
+            .map(item => item.trim())
+            .filter(item => item !== "");
+
+    };
+
+    if (plant) {
+
+        plant.partsUsed = stringToArray(plant.partsUsed);
+
+        plant.primaryUses = stringToArray(plant.primaryUses);
+
+        plant.conditionsTreated = stringToArray(plant.conditionsTreated);
+
+        plant.steps = stringToArray(plant.steps);
+
+        plant.precautions = stringToArray(plant.precautions);
+
+        plant.mild = stringToArray(plant.mild);
+
+        plant.overuse = stringToArray(plant.overuse);
+
+        plant.allergic = stringToArray(plant.allergic);
+
+    }
+
     const { error } = plantSchema.validate(req.body);
 
     if (error) {
 
-        const errMsg = error.details.map(el => el.message).join(", ");
+        const errMsg = error.details
+            .map(el => el.message)
+            .join(", ");
 
         throw new ExpressError(400, errMsg);
+
     }
 
     next();
+
 };
 // ======================================
 // Validate Disease

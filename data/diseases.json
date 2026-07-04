@@ -24,8 +24,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Common_cold.PNG",
+        "filename": "Common_cold.PNG"
     }
 },
 
@@ -54,8 +54,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Fever.PNG",
+        "filename": "Fever.PNG"
     }
 },
 
@@ -84,8 +84,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Diabetes.PNG",
+        "filename": "Diabetes.PNG"
     }
 },
 
@@ -113,8 +113,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Hypertension.PNG",
+        "filename": "Hypertension.PNG"
     }
 },
 
@@ -141,8 +141,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Asthma.PNG",
+        "filename": "Asthma.PNG"
     }
 },
 {
@@ -169,8 +169,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Arthritis.PNG",
+        "filename": "Arthritis.PNG"
     }
 },
 {
@@ -198,8 +198,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Migraine.PNG",
+        "filename": "Migraine.PNG"
     }
 },
 {
@@ -226,8 +226,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Skin_infection.PNG",
+        "filename": "Skin_infection.PNG"
     }
 },
 {
@@ -254,8 +254,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Acne.PNG",
+        "filename": "Acne.PNG"
     }
 },
 {
@@ -282,8 +282,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Indigestion.PNG",
+        "filename": "Indigestion.PNG"
     }
 },
 {
@@ -310,8 +310,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Constipation.PNG",
+        "filename": "Constipation.PNG"
     }
 },
 {
@@ -338,8 +338,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Diarrhea.PNG",
+        "filename": "Diarrhea.PNG"
     }
 },
 {
@@ -367,8 +367,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Insomnia.PNG",
+        "filename": "Insomnia.PNG"
     }
 },
 {
@@ -395,8 +395,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Anemia.PNG",
+        "filename": "Anemia.PNG"
     }
 },
 {
@@ -423,8 +423,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Obesity.PNG",
+        "filename": "Obesity.PNG"
     }
 },
 {
@@ -453,8 +453,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Liver_disorder.PNG",
+        "filename": "Liver_disorder.PNG"
     }
 },
 {
@@ -481,8 +481,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Urinary_Tract_Infection.PNG",
+        "filename": "Urinary_Tract_Infection.PNG"
     }
 },
 {
@@ -509,8 +509,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Stress.PNG",
+        "filename": "Stress.PNG"
     }
 },
 {
@@ -538,8 +538,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Skin_allergy.PNG",
+        "filename": "Skin_allergy.PNG"
     }
 },
 {
@@ -566,8 +566,8 @@
     ],
     "recommendedPlants": [],
     "image": {
-        "url": "/images/default-disease.jpg",
-        "filename": "default-disease"
+        "url": "/images/disease/Gastric_Ulcer.png",
+        "filename": "Gastric_Ulcer.png"
     }
 }
 ]

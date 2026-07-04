@@ -3,6 +3,10 @@
     "commonName": "Tulsi",
     "scientificName": "Ocimum sanctum",
     "localName": "Holy Basil",
+    "image": {
+        "url": "/images/plant/tulsi.png",
+        "filename": "tulsi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaves"],
@@ -46,6 +50,10 @@
     "commonName": "Amla",
     "scientificName": "Phyllanthus emblica",
     "localName": "Indian Gooseberry",
+    "image": {
+        "url": "/images/plant/amla.png",
+        "filename": "amla.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Fruit"],
@@ -88,6 +96,10 @@
     "commonName": "Neem",
     "scientificName": "Azadirachta indica",
     "localName": "Neem",
+    "image": {
+        "url": "/images/plant/neem.png",
+        "filename": "neem.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Leaves", "Bark"],
@@ -130,6 +142,10 @@
     "commonName": "Aloe Vera",
     "scientificName": "Aloe barbadensis miller",
     "localName": "Ghritkumari",
+    "image": {
+        "url": "/images/plant/Aloe_Vera.png",
+        "filename": "Aloe_Vera.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaf gel"],
@@ -173,6 +189,10 @@
     "commonName": "Ashwagandha",
     "scientificName": "Withania somnifera",
     "localName": "Indian Ginseng",
+    "image": {
+        "url": "/images/plant/Ashwagandha.png",
+        "filename": "Ashwagandha.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Root"],
@@ -215,6 +235,10 @@
     "commonName": "Turmeric",
     "scientificName": "Curcuma longa",
     "localName": "Haldi",
+    "image": {
+        "url": "/images/plant/Turmeric.png",
+        "filename": "Turmeric.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -258,6 +282,10 @@
     "commonName": "Giloy",
     "scientificName": "Tinospora cordifolia",
     "localName": "Guduchi",
+    "image": {
+        "url": "/images/plant/Giloy.png",
+        "filename": "Giloy.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Stem"],
@@ -300,6 +328,10 @@
     "commonName": "Moringa",
     "scientificName": "Moringa oleifera",
     "localName": "Drumstick Tree",
+    "image": {
+        "url": "/images/plant/Moringa.png",
+        "filename": "Moringa.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Leaves", "Pods"],
@@ -342,6 +374,10 @@
     "commonName": "Shatavari",
     "scientificName": "Asparagus racemosus",
     "localName": "Shatamuli",
+    "image": {
+        "url": "/images/plant/Shatavari.png",
+        "filename": "Shatavari.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Root"],
@@ -384,6 +420,10 @@
     "commonName": "Brahmi",
     "scientificName": "Bacopa monnieri",
     "localName": "Jal Brahmi",
+    "image": {
+        "url": "/images/plant/Brahmi.png",
+        "filename": "Brahmi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Whole plant"],
@@ -425,6 +465,10 @@
     "commonName": "Ginger",
     "scientificName": "Zingiber officinale",
     "localName": "Adrak",
+    "image": {
+        "url": "/images/plant/Ginger.png",
+        "filename": "Ginger.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -467,6 +511,10 @@
     "commonName": "Ajwain",
     "scientificName": "Trachyspermum ammi",
     "localName": "Carom Seeds",
+    "image": {
+        "url": "/images/plant/Ajwain.png",
+        "filename": "Ajwain.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Seeds"],
@@ -509,6 +557,10 @@
     "commonName": "Triphala",
     "scientificName": "Terminalia chebula, Terminalia bellirica, Phyllanthus emblica",
     "localName": "Triphala",
+    "image": {
+        "url": "/images/plant/Triphala.png",
+        "filename": "Triphala.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Fruit"],
@@ -551,6 +603,10 @@
     "commonName": "Fennel",
     "scientificName": "Foeniculum vulgare",
     "localName": "Saunf",
+    "image": {
+        "url": "/images/plant/Fennel.png",
+        "filename": "Fennel.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Seeds"],
@@ -593,6 +649,10 @@
     "commonName": "Cumin",
     "scientificName": "Cuminum cyminum",
     "localName": "Jeera",
+    "image": {
+        "url": "/images/plant/Cumin.png",
+        "filename": "Cumin.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Seeds"],
@@ -635,6 +695,10 @@
     "commonName": "Haritaki",
     "scientificName": "Terminalia chebula",
     "localName": "Harad",
+    "image": {
+        "url": "/images/plant/Haritaki.png",
+        "filename": "Haritaki.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Fruit"],
@@ -678,6 +742,10 @@
     "commonName": "Bael",
     "scientificName": "Aegle marmelos",
     "localName": "Bel",
+    "image": {
+        "url": "/images/plant/Bael.png",
+        "filename": "Bael.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Fruit", "Leaves"],
@@ -720,6 +788,10 @@
     "commonName": "Hing",
     "scientificName": "Ferula asafoetida",
     "localName": "Asafoetida",
+    "image": {
+        "url": "/images/plant/Hing.png",
+        "filename": "Hing.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Resin"],
@@ -763,6 +835,10 @@
     "commonName": "Pudina",
     "scientificName": "Mentha arvensis",
     "localName": "Mint",
+    "image": {
+        "url": "/images/plant/Pudina.png",
+        "filename": "Pudina.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaves"],
@@ -805,6 +881,10 @@
     "commonName": "Isabgol",
     "scientificName": "Plantago ovata",
     "localName": "Psyllium Husk",
+    "image": {
+        "url": "/images/plant/Isabgol.png",
+        "filename": "Isabgol.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Seeds", "Husk"],
@@ -846,6 +926,10 @@
     "commonName": "Mulethi",
     "scientificName": "Glycyrrhiza glabra",
     "localName": "Licorice",
+    "image": {
+        "url": "/images/plant/Mulethi.png",
+        "filename": "Mulethi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Root"],
@@ -889,6 +973,10 @@
     "commonName": "Vasaka",
     "scientificName": "Justicia adhatoda",
     "localName": "Adulsa",
+    "image": {
+        "url": "/images/plant/Vasaka.png",
+        "filename": "Vasaka.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Leaves"],
@@ -931,6 +1019,10 @@
     "commonName": "Pippali",
     "scientificName": "Piper longum",
     "localName": "Long Pepper",
+    "image": {
+        "url": "/images/plant/Pippali.png",
+        "filename": "Pippali.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Fruit"],
@@ -974,6 +1066,10 @@
     "commonName": "Kantakari",
     "scientificName": "Solanum xanthocarpum",
     "localName": "Yellow Berried Nightshade",
+    "image": {
+        "url": "/images/plant/Kantakari.png",
+        "filename": "Kantakari.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Whole plant"],
@@ -1016,6 +1112,10 @@
     "commonName": "Pushkarmool",
     "scientificName": "Inula racemosa",
     "localName": "Pushkarmool",
+    "image": {
+        "url": "/images/plant/Pushkarmool.png",
+        "filename": "Pushkarmool.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Root"],
@@ -1058,6 +1158,10 @@
     "commonName": "Anantmool",
     "scientificName": "Hemidesmus indicus",
     "localName": "Indian Sarsaparilla",
+    "image": {
+        "url": "/images/plant/Anantmool.png",
+        "filename": "Anantmool.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Root"],
@@ -1100,6 +1204,10 @@
     "commonName": "Talisa Patra",
     "scientificName": "Abies webbiana",
     "localName": "Talispatra",
+    "image": {
+        "url": "/images/plant/Talisa_Patra.png",
+        "filename": "Talisa_Patra.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Leaves"],
@@ -1142,6 +1250,10 @@
     "commonName": "Banafsha",
     "scientificName": "Viola odorata",
     "localName": "Sweet Violet",
+    "image": {
+        "url": "/images/plant/Banafsha.png",
+        "filename": "Banafsha.png"
+      },
     "ayushSystem": "Unani",
     "plantType": "Herb",
     "partsUsed": ["Flowers", "Leaves"],
@@ -1184,6 +1296,10 @@
     "commonName": "Jatamansi",
     "scientificName": "Nardostachys jatamansi",
     "localName": "Spikenard",
+    "image": {
+        "url": "/images/plant/Jatamansi.png",
+        "filename": "Jatamansi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -1226,6 +1342,10 @@
     "commonName": "Tagara",
     "scientificName": "Valeriana wallichii",
     "localName": "Indian Valerian",
+    "image": {
+        "url": "/images/plant/Tagara.png",
+        "filename": "Tagara.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Root"],
@@ -1268,6 +1388,10 @@
     "commonName": "Shankhpushpi",
     "scientificName": "Convolvulus pluricaulis",
     "localName": "Shankhpushpi",
+    "image": {
+        "url": "/images/plant/Shankhpushpi.png",
+        "filename": "Shankhpushpi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Whole plant"],
@@ -1310,6 +1434,10 @@
     "commonName": "Mandukaparni",
     "scientificName": "Centella asiatica",
     "localName": "Gotu Kola",
+    "image": {
+        "url": "/images/plant/Mandukaparni.png",
+        "filename": "Mandukaparni.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaves"],
@@ -1352,6 +1480,10 @@
     "commonName": "Jyotishmati",
     "scientificName": "Celastrus paniculatus",
     "localName": "Malkangni",
+    "image": {
+        "url": "/images/plant/Jyotishmati.png",
+        "filename": "Jyotishmati.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Seeds"],
@@ -1394,6 +1526,10 @@
     "commonName": "Vacha",
     "scientificName": "Acorus calamus",
     "localName": "Sweet Flag",
+    "image": {
+        "url": "/images/plant/Vacha.png",
+        "filename": "Vacha.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -1437,6 +1573,10 @@
     "commonName": "Manjistha",
     "scientificName": "Rubia cordifolia",
     "localName": "Indian Madder",
+    "image": {
+        "url": "/images/plant/Manjistha.png",
+        "filename": "Manjistha.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Climber",
     "partsUsed": ["Root"],
@@ -1478,6 +1618,10 @@
     "commonName": "Karanja",
     "scientificName": "Pongamia pinnata",
     "localName": "Indian Beech",
+    "image": {
+        "url": "/images/plant/Karanja.png",
+        "filename": "Karanja.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Seeds", "Leaves", "Bark"],
@@ -1521,6 +1665,10 @@
     "commonName": "Chandana",
     "scientificName": "Santalum album",
     "localName": "Sandalwood",
+    "image": {
+        "url": "/images/plant/Chandana.png",
+        "filename": "Chandana.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Heartwood"],
@@ -1564,6 +1712,10 @@
     "commonName": "Bhringraj",
     "scientificName": "Eclipta alba",
     "localName": "False Daisy",
+    "image": {
+        "url": "/images/plant/Bhringraj.png",
+        "filename": "Bhringraj.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaves"],
@@ -1606,6 +1758,10 @@
     "commonName": "Lodhra",
     "scientificName": "Symplocos racemosa",
     "localName": "Lodh",
+    "image": {
+        "url": "/images/plant/Lodhra.png",
+        "filename": "Lodhra.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Bark"],
@@ -1648,6 +1804,10 @@
     "commonName": "Haridra (Wild Turmeric)",
     "scientificName": "Curcuma aromatica",
     "localName": "Kasturi Manjal",
+    "image": {
+        "url": "/images/plant/Haridra.png",
+        "filename": "Haridra.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -1691,6 +1851,10 @@
     "commonName": "Guggulu",
     "scientificName": "Commiphora wightii",
     "localName": "Indian Bdellium",
+    "image": {
+        "url": "/images/plant/Guggulu.png",
+        "filename": "Guggulu.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Resin"],
@@ -1734,6 +1898,10 @@
     "commonName": "Shallaki",
     "scientificName": "Boswellia serrata",
     "localName": "Indian Frankincense",
+    "image": {
+        "url": "/images/plant/Shallaki.png",
+        "filename": "Shallaki.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Resin"],
@@ -1776,6 +1944,10 @@
     "commonName": "Nirgundi",
     "scientificName": "Vitex negundo",
     "localName": "Five-Leaved Chaste Tree",
+    "image": {
+        "url": "/images/plant/Nirgundi.png",
+        "filename": "Nirgundi.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Leaves"],
@@ -1818,6 +1990,10 @@
     "commonName": "Eranda",
     "scientificName": "Ricinus communis",
     "localName": "Castor",
+    "image": {
+        "url": "/images/plant/Eranda.png",
+        "filename": "Eranda.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Seeds", "Oil"],
@@ -1861,6 +2037,10 @@
     "commonName": "Rasna",
     "scientificName": "Pluchea lanceolata",
     "localName": "Rasna",
+    "image": {
+        "url": "/images/plant/Rasna.png",
+        "filename": "Rasna.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Leaves", "Root"],
@@ -1902,6 +2082,10 @@
     "commonName": "Arjuna",
     "scientificName": "Terminalia arjuna",
     "localName": "Arjun",
+    "image": {
+        "url": "/images/plant/Arjuna.png",
+        "filename": "Arjuna.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Bark"],
@@ -1943,6 +2127,10 @@
     "commonName": "Punarnava",
     "scientificName": "Boerhavia diffusa",
     "localName": "Hogweed",
+    "image": {
+        "url": "/images/plant/Punarnava.png",
+        "filename": "Punarnava.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Whole plant"],
@@ -1985,6 +2173,10 @@
     "commonName": "Daruharidra",
     "scientificName": "Berberis aristata",
     "localName": "Tree Turmeric",
+    "image": {
+        "url": "/images/plant/Daruharidra.png",
+        "filename": "Daruharidra.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Shrub",
     "partsUsed": ["Stem", "Root"],
@@ -2026,6 +2218,10 @@
     "commonName": "Kutki",
     "scientificName": "Picrorhiza kurroa",
     "localName": "Katuki",
+    "image": {
+        "url": "/images/plant/Kutki.png",
+        "filename": "Kutki.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Herb",
     "partsUsed": ["Rhizome"],
@@ -2069,6 +2265,10 @@
     "commonName": "Kokum",
     "scientificName": "Garcinia indica",
     "localName": "Kokam",
+    "image": {
+        "url": "/images/plant/Kokum.png",
+        "filename": "Kokum.png"
+      },
     "ayushSystem": "Ayurveda",
     "plantType": "Tree",
     "partsUsed": ["Fruit rind"],
