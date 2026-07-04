@@ -1,15 +1,19 @@
 const mongoose = require("mongoose");
+
 const Disease = require("../models/disease");
+const Plant = require("../models/plant");
+
 const diseases = require("../data/diseases.json");
+
 require("dotenv").config();
 
 const MONGO_URL =
     process.env.ATLASDB_URL ||
     "mongodb://127.0.0.1:27017/virtualHerbalGarden";
 
-// ===============================
+// ======================================
 // Connect Database
-// ===============================
+// ======================================
 
 async function main() {
 
@@ -23,9 +27,9 @@ main()
     .then(initDB)
     .catch(err => console.log(err));
 
-// ===============================
+// ======================================
 // Seed Diseases
-// ===============================
+// ======================================
 
 async function initDB() {
 
@@ -35,9 +39,45 @@ async function initDB() {
 
         console.log("🗑 Old Diseases Deleted");
 
-        await Disease.insertMany(diseases);
+        // ----------------------------------
+        // Convert Plant Names → ObjectIds
+        // ----------------------------------
 
-        console.log(`🩺 ${diseases.length} Diseases Added Successfully!`);
+        const updatedDiseases = [];
+
+        for (let disease of diseases) {
+
+            const plantIds = [];
+
+            for (let plantName of disease.recommendedPlants) {
+
+                const plant = await Plant.findOne({
+                    commonName: plantName
+                });
+
+                if (plant) {
+
+                    plantIds.push(plant._id);
+
+                } else {
+
+                    console.log(`⚠ Plant not found: ${plantName}`);
+
+                }
+
+            }
+
+            disease.recommendedPlants = plantIds;
+
+            updatedDiseases.push(disease);
+
+        }
+
+        await Disease.insertMany(updatedDiseases);
+
+        console.log(
+            `🩺 ${updatedDiseases.length} Diseases Added Successfully!`
+        );
 
     }
 

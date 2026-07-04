@@ -22,7 +22,10 @@
         "Eat nutritious food",
         "Maintain good personal hygiene"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Tulsi",
+            "Ginger",
+            "Mulethi",
+            "Vasaka"],
     "image": {
         "url": "/images/disease/Common_cold.PNG",
         "filename": "Common_cold.PNG"
@@ -52,7 +55,10 @@
         "Take vaccinations",
         "Eat balanced meals"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Giloy",
+        "Tulsi",
+        "Neem",
+        "Turmeric"],
     "image": {
         "url": "/images/disease/Fever.PNG",
         "filename": "Fever.PNG"
@@ -82,7 +88,10 @@
         "Reduce sugar intake",
         "Regular blood sugar checkups"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Neem",
+        "Amla",
+        "Turmeric",
+        "Moringa"],
     "image": {
         "url": "/images/disease/Diabetes.PNG",
         "filename": "Diabetes.PNG"
@@ -111,7 +120,9 @@
         "Manage stress",
         "Avoid smoking"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Arjuna",
+        "Ashwagandha",
+        "Brahmi"],
     "image": {
         "url": "/images/disease/Hypertension.PNG",
         "filename": "Hypertension.PNG"
@@ -139,7 +150,10 @@
         "Exercise regularly",
         "Avoid smoking"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Vasaka",
+        "Tulsi",
+        "Mulethi",
+        "Pippali"],
     "image": {
         "url": "/images/disease/Asthma.PNG",
         "filename": "Asthma.PNG"
@@ -167,7 +181,10 @@
         "Eat anti-inflammatory foods",
         "Avoid joint injuries"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Shallaki",
+        "Turmeric",
+        "Ginger",
+        "Ashwagandha"],
     "image": {
         "url": "/images/disease/Arthritis.PNG",
         "filename": "Arthritis.PNG"
@@ -196,7 +213,9 @@
         "Manage stress",
         "Avoid known triggers"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Brahmi",
+        "Jatamansi",
+        "Shankhpushpi"],
     "image": {
         "url": "/images/disease/Migraine.PNG",
         "filename": "Migraine.PNG"
@@ -224,7 +243,9 @@
         "Avoid sharing personal items",
         "Clean wounds properly"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Neem",
+        "Turmeric",
+        "Aloe Vera"],
     "image": {
         "url": "/images/disease/Skin_infection.PNG",
         "filename": "Skin_infection.PNG"
@@ -252,7 +273,10 @@
         "Eat a balanced diet",
         "Do not squeeze pimples"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Neem",
+        "Aloe Vera",
+        "Turmeric",
+        "Manjistha"],
     "image": {
         "url": "/images/disease/Acne.PNG",
         "filename": "Acne.PNG"
@@ -280,7 +304,10 @@
         "Reduce spicy foods",
         "Exercise regularly"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Ajwain",
+        "Ginger",
+        "Hing",
+        "Fennel"],
     "image": {
         "url": "/images/disease/Indigestion.PNG",
         "filename": "Indigestion.PNG"
@@ -308,7 +335,9 @@
         "Exercise daily",
         "Maintain regular bowel habits"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Isabgol",
+        "Triphala",
+        "Haritaki"],
     "image": {
         "url": "/images/disease/Constipation.PNG",
         "filename": "Constipation.PNG"
@@ -336,7 +365,9 @@
         "Eat hygienic food",
         "Avoid contaminated food"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Bael",
+        "Kutki",
+        "Pudina"],
     "image": {
         "url": "/images/disease/Diarrhea.PNG",
         "filename": "Diarrhea.PNG"
@@ -365,7 +396,10 @@
         "Practice meditation",
         "Limit screen time at night"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Brahmi",
+        "Jatamansi",
+        "Ashwagandha",
+        "Tagara"],
     "image": {
         "url": "/images/disease/Insomnia.PNG",
         "filename": "Insomnia.PNG"
@@ -393,7 +427,9 @@
         "Regular health checkups",
         "Maintain balanced nutrition"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Amla",
+        "Moringa",
+        "Punarnava"],
     "image": {
         "url": "/images/disease/Anemia.PNG",
         "filename": "Anemia.PNG"
@@ -421,7 +457,9 @@
         "Limit sugary foods",
         "Monitor body weight"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Triphala",
+        "Guggulu",
+        "Ginger"],
     "image": {
         "url": "/images/disease/Obesity.PNG",
         "filename": "Obesity.PNG"
@@ -451,7 +489,8 @@
         "Vaccination against hepatitis",
         "Exercise regularly"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Kutki",
+      "Bhringraj"],
     "image": {
         "url": "/images/disease/Liver_disorder.PNG",
         "filename": "Liver_disorder.PNG"
@@ -479,7 +518,8 @@
         "Do not hold urine",
         "Urinate after sexual activity"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Punarnava",
+      "Chandana"],
     "image": {
         "url": "/images/disease/Urinary_Tract_Infection.PNG",
         "filename": "Urinary_Tract_Infection.PNG"
@@ -507,7 +547,9 @@
         "Get adequate sleep",
         "Maintain work-life balance"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Ashwagandha",
+        "Brahmi",
+        "Shankhpushpi"],
     "image": {
         "url": "/images/disease/Stress.PNG",
         "filename": "Stress.PNG"
@@ -536,7 +578,9 @@
         "Keep skin moisturized",
         "Wear protective clothing"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Neem",
+        "Aloe Vera",
+        "Manjistha"],
     "image": {
         "url": "/images/disease/Skin_allergy.PNG",
         "filename": "Skin_allergy.PNG"
@@ -564,7 +608,9 @@
         "Limit alcohol consumption",
         "Avoid smoking"
     ],
-    "recommendedPlants": [],
+    "recommendedPlants": ["Mulethi",
+        "Aloe Vera",
+        "Shatavari"],
     "image": {
         "url": "/images/disease/Gastric_Ulcer.png",
         "filename": "Gastric_Ulcer.png"
