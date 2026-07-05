@@ -56,25 +56,30 @@
 
             <!-- Search Bar -->
             <form
-                class="d-flex search-bar me-3"
-                action="/plants"
-                method="GET"
-            >
+    class="d-flex search-bar me-3"
+    action="/search"
+    method="GET"
+>
 
-                <input
-                    class="form-control search-input"
-                    type="search"
-                    name="search"
-                    placeholder="Search medicinal plants..."
-                >
+    <input
+        class="form-control search-input"
+        type="search"
+        name="q"
+        placeholder="Search plants, diseases, symptoms..."
+        value="<%= typeof query !== 'undefined' ? query : '' %>"
+        required
+    >
 
-                <button class="btn search-btn">
+    <button
+        class="btn search-btn"
+        type="submit"
+    >
 
-                    <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
 
-                </button>
+    </button>
 
-            </form>
+</form>
 
             <!-- Right Navigation -->
             <ul class="navbar-nav">

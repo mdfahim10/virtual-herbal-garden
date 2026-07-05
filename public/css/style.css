@@ -38,7 +38,7 @@ body{
 }
 
 .search-bar{
-    width:320px;
+    width:400px;
 }
 
 .search-input{
@@ -70,57 +70,333 @@ body{
                 HOME PAGE
 ====================================================== */
 
+/* ======================================================
+                    HERO SECTION
+====================================================== */
+
 .hero-section{
-    min-height:90vh;
-    display:flex;
-    align-items:center;
-    background:linear-gradient(135deg,#edf9ef,#d9f4dc);
-    padding:70px 0;
+    background: linear-gradient(135deg,#edf9ef,#dff6e2);
+    padding: 30px 0 50px;
 }
+
+/* ===========================
+        Heading
+=========================== */
 
 .hero-title{
-    font-size:3.8rem;
-    font-weight:800;
-    color:#1b5e20;
-    margin-bottom:25px;
+    font-size: 3.2rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1;
+    color: #184d2f;
+    margin-bottom: 4px;
 }
 
+.hero-title span{
+    color:#2e7d32;
+}
+
+.hero-tagline{
+    font-size:1.15rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#6d8d74;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+/* ===========================
+        Hero Layout
+=========================== */
+
+.hero-content{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+
+}
+
+.hero-left{
+
+    flex:1.8;
+    display:flex;
+    justify-content:center;
+
+}
+
+.hero-right{
+
+    flex:.9;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    align-items:flex-start;
+
+}
+
+/* ===========================
+        Hero Image
+=========================== */
+
+.hero-image{
+
+    width:100%;
+    max-width:650px;
+
+    border-radius:25px;
+
+    border:8px solid white;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+    transition:.6s ease;
+
+}
+
+.hero-image:hover{
+
+    transform:scale(1.02);
+
+    box-shadow:0 35px 70px rgba(0,0,0,.22);
+
+}
+
+/* ===========================
+        Hero Features
+=========================== */
+
+.hero-feature{
+
+    width:300px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:18px 22px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(10px);
+
+    border-radius:18px;
+
+    border-left:5px solid #2e7d32;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+}
+
+.hero-feature:hover{
+
+    transform:translateX(8px) translateY(-3px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+
+}
+
+.hero-feature i{
+
+    color:#2e7d32;
+
+    font-size:1.25rem;
+
+    width:28px;
+
+    text-align:center;
+
+}
+
+.hero-feature span{
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+/* ===========================
+        Description
+=========================== */
+
 .hero-subtitle{
-    font-size:1.2rem;
-    color:#555;
-    line-height:1.9;
-    margin-bottom:35px;
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    font-size:o.8rem;
+
+    line-height:1.7;
+
+    color:#5b5b5b;
+
+}
+
+/* ===========================
+        Buttons
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:15px;
+
 }
 
 .hero-buttons .btn{
-    border-radius:40px;
-    padding:14px 35px;
-    font-size:1.05rem;
+
+    padding:16px 40px;
+
+    border-radius:50px;
+
+    font-size:1.08rem;
+
     font-weight:600;
+
+    transition:.35s ease;
+
+}
+
+.hero-buttons .btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+/* ======================================================
+                Responsive
+====================================================== */
+
+@media (max-width:992px){
+
+.hero-title{
+
+    font-size:2.5rem;
+
+}
+
+.hero-tagline{
+
+    font-size:.95rem;
+
+    letter-spacing:2px;
+
+}
+
+.hero-content{
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.hero-left,
+.hero-right{
+
+    width:100%;
+
+}
+
+.hero-right{
+
+    align-items:center;
+
+}
+
+.hero-feature{
+
+    width:100%;
+
+    max-width:420px;
+
 }
 
 .hero-image{
+
+    max-width:100%;
+
+}
+
+.hero-subtitle{
+
+    padding:0 20px;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+}
+
+.hero-buttons{
+
+    gap:15px;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.hero-section{
+
+    padding:25px 0 40px;
+
+}
+
+.hero-title{
+
+    font-size:2rem;
+
+}
+
+.hero-tagline{
+
+    font-size:.8rem;
+
+    letter-spacing:2px;
+
+}
+
+.hero-feature{
+
+    padding:15px 18px;
+
+}
+
+.hero-feature span{
+
+    font-size:.92rem;
+
+}
+
+.hero-buttons .btn{
+
     width:100%;
-    max-width:550px;
-    animation:float 4s ease-in-out infinite;
-}
 
-@keyframes float{
-
-    0%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(-12px);
-    }
-
-    100%{
-        transform:translateY(0px);
-    }
+    max-width:280px;
 
 }
 
+}
 /* ======================================================
                 STATISTICS
 ====================================================== */
@@ -429,9 +705,17 @@ font-size:1.8rem;
 }
 
 .disease-card:hover{
+
     background:#2e7d32;
-    color:white;
+
     transform:translateY(-10px);
+
+}
+
+.disease-card:hover h5{
+
+    color:white;
+
 }
 
 .disease-card i{
@@ -440,8 +724,17 @@ font-size:1.8rem;
 }
 
 .disease-card h5{
-    margin:0;
+
+    margin-top:15px;
+
     font-weight:700;
+
+    font-size:1.2rem;
+
+    color:#1b5e20;
+
+    transition:0.3s;
+
 }
 
 /* ======================================================
@@ -524,7 +817,6 @@ font-size:1.8rem;
     margin-bottom:15px;
 
 }
-
 /* ===========================================
         CATEGORY
 =========================================== */
@@ -533,7 +825,7 @@ font-size:1.8rem;
 
     padding:90px 0;
 
-    background:white;
+    background:#fff;
 
 }
 
@@ -541,15 +833,25 @@ font-size:1.8rem;
 
     background:#edf9ef;
 
-    padding:35px;
+    padding:35px 20px;
 
     border-radius:20px;
-
-    font-size:3rem;
 
     transition:.35s;
 
     cursor:pointer;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
 }
 
@@ -563,6 +865,12 @@ font-size:1.8rem;
 
 }
 
+.category-box:hover h5{
+
+    color:white;
+
+}
+
 .category-box h5{
 
     margin-top:20px;
@@ -571,8 +879,9 @@ font-size:1.8rem;
 
     font-weight:700;
 
-}
+    color:#1b5e20;
 
+}
 /* =====================================================
                 PLANT INDEX
 ===================================================== */

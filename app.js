@@ -15,8 +15,11 @@ const morgan = require("morgan");
 
 // Models
 const User = require("./models/user");
+const Plant = require("./models/plant");
+const Disease = require("./models/disease");
 
 // Routes
+const searchRoutes = require("./routes/search");
 const plantRoutes = require("./routes/plant");
 const diseaseRoutes = require("./routes/disease");
 const userRoutes = require("./routes/user");
@@ -150,9 +153,56 @@ app.use((req, res, next) => {
 // Routes
 // =====================================================
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res, next) => {
 
-    res.render("home");
+    try {
+
+        const totalPlants =
+            await Plant.countDocuments();
+
+        const totalDiseases =
+            await Disease.countDocuments();
+
+        const totalCategories =
+            (await Plant.distinct("plantType")).length;
+
+        const totalAyushSystems =
+            (await Plant.distinct("ayushSystem")).length;
+
+        const featuredPlants =
+            await Plant.find({})
+                .limit(4);
+        const featuredDiseases =
+            await Disease.find({})
+                .limit(6);
+        const categories =
+            await Plant.distinct("plantType");
+
+        res.render("home", {
+
+            totalPlants,
+
+            totalDiseases,
+
+            totalCategories,
+
+            totalAyushSystems,
+
+            featuredPlants,
+
+            featuredDiseases,
+
+            categories
+
+        });
+
+    }
+
+    catch(err){
+
+        next(err);
+
+    }
 
 });
 
@@ -161,6 +211,8 @@ app.use("/plants", plantRoutes);
 app.use("/diseases", diseaseRoutes);
 
 app.use("/", userRoutes);
+
+app.use("/search", searchRoutes);
 
 
 // =====================================================
