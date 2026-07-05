@@ -71,7 +71,6 @@ app.use(methodOverride("_method"));
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(morgan("dev"));
 
 app.use(
     mongoSanitize({

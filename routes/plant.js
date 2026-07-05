@@ -7,6 +7,7 @@ const plantController = require("../controllers/plant");
 const {
     isLoggedIn,
     validatePlant,
+    isAdmin
 } = require("../middleware");
 
 const multer = require("multer");
@@ -24,6 +25,7 @@ router
 .get(wrapAsync(plantController.index))
 .post(
     isLoggedIn,
+    isAdmin,
     upload.single("plantImage"),
     validatePlant,
     wrapAsync(plantController.createPlant)
@@ -34,9 +36,9 @@ router
 // Render New Plant Form
 // ======================================
 
-router.get(
-    "/new",
+router.get("/new",
     isLoggedIn,
+    isAdmin,
     plantController.renderNewForm
 );
 
@@ -58,6 +60,7 @@ router.get(
 router.get(
     "/:id/edit",
     isLoggedIn,
+    isAdmin,
     wrapAsync(plantController.renderEditForm)
 );
 
@@ -69,6 +72,7 @@ router.get(
 router.put(
     "/:id",
     isLoggedIn,
+    isAdmin,
     upload.single("plantImage"),
     validatePlant,
     wrapAsync(plantController.updatePlant)
@@ -82,6 +86,7 @@ router.put(
 router.delete(
     "/:id",
     isLoggedIn,
+    isAdmin,
     wrapAsync(plantController.destroyPlant)
 );
 

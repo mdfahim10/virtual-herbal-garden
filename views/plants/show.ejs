@@ -253,7 +253,7 @@
 
                 <hr>
 
-                <% if(currUser){ %>
+                <% if(currUser && currUser.role === "admin"){ %>
 
                 <a
                     href="/plants/<%= plant._id %>/edit"

@@ -149,3 +149,17 @@ module.exports.validateDisease = (req, res, next) => {
     next();
 
 };
+
+module.exports.isAdmin = (req, res, next) => {
+
+    if (!req.user || req.user.role !== "admin") {
+
+        req.flash("error", "Access Denied! Admin privileges required.");
+
+        return res.redirect("/");
+
+    }
+
+    next();
+
+};

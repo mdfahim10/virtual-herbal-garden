@@ -8,6 +8,7 @@ const diseaseController = require("../controllers/disease");
 const {
     isLoggedIn,
     validateDisease,
+    isAdmin,
 } = require("../middleware");
 
 // Cloudinary
@@ -26,6 +27,7 @@ router
 .get(wrapAsync(diseaseController.index))
 .post(
     isLoggedIn,
+    isAdmin,
     upload.single("diseaseImage"),
     validateDisease,
     wrapAsync(diseaseController.createDisease)
@@ -39,6 +41,7 @@ router
 router.get(
     "/new",
     isLoggedIn,
+    isAdmin,
     diseaseController.renderNewForm
 );
 
@@ -60,6 +63,7 @@ router.get(
 router.get(
     "/:id/edit",
     isLoggedIn,
+    isAdmin,
     wrapAsync(diseaseController.renderEditForm)
 );
 
@@ -71,6 +75,7 @@ router.get(
 router.put(
     "/:id",
     isLoggedIn,
+    isAdmin,
     upload.single("diseaseImage"),
     validateDisease,
     wrapAsync(diseaseController.updateDisease)
@@ -84,6 +89,7 @@ router.put(
 router.delete(
     "/:id",
     isLoggedIn,
+    isAdmin,
     wrapAsync(diseaseController.destroyDisease)
 );
 

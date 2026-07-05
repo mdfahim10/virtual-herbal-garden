@@ -21,7 +21,7 @@
 
         <!-- Add Plant Button -->
 
-        <% if(currUser){ %>
+        <% if(currUser && currUser.role === "admin"){ %>
 
             <div class="text-end mb-4">
 
