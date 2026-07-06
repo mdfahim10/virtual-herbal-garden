@@ -314,3 +314,60 @@ The application should now be running successfully.
 
 ---
 
+---
+
+#  Application Screenshots
+
+##  Home Page
+
+![Home Page](screenshots/home.png)
+
+---
+
+##  Medicinal Plants
+
+![Medicinal Plants](screenshots/plants.png)
+
+---
+
+##  Plant Details
+
+![Plant Details](screenshots/plant-details.png)
+
+---
+
+##  Diseases
+
+![Diseases](screenshots/diseases.png)
+
+---
+
+##  Disease Details
+
+![Disease Details](screenshots/disease-details.png)
+
+---
+
+##  Universal Search
+
+![Universal Search](screenshots/search.png)
+
+---
+
+## Authentication
+
+### Login
+
+![Login](screenshots/login.png)
+
+### Signup
+
+![Signup](screenshots/signup.png)
+
+---
+
+##  Admin Panel
+
+![Admin Panel](screenshots/admin.png)
+
+---
