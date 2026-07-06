@@ -26,3 +26,28 @@ A full-stack web application for exploring medicinal plants, disease-wise herbal
 The platform enables users to explore medicinal plants, discover disease-wise herbal remedies, understand traditional AYUSH systems, and access scientifically organized plant information from a single, user-friendly interface.
 
 The application includes secure authentication, role-based authorization, image management using Cloudinary, dynamic search functionality, and a responsive interface designed to provide an informative and seamless user experience.
+
+
+---
+
+# 🌱 Project Overview
+
+Virtual Herbal Garden is a full-stack web application developed to digitally preserve and promote India's rich medicinal plant heritage. It serves as an educational platform where users can explore medicinal plants, understand their scientific and traditional uses, discover disease-wise herbal remedies, and learn about different AYUSH systems.
+
+The application provides an intuitive interface for browsing medicinal plant information, searching across multiple datasets, and accessing detailed knowledge about natural remedies. It also includes a secure administration module for managing plant and disease records through a role-based authentication system.
+
+The primary objective of this project is to bridge traditional herbal knowledge with modern web technologies, making valuable medicinal plant information easily accessible through a centralized digital platform.
+
+---
+
+# 🎯 Objectives
+
+- Develop a centralized digital repository of medicinal plants.
+- Preserve and promote traditional AYUSH knowledge.
+- Provide disease-wise herbal remedy information.
+- Implement secure user authentication and authorization.
+- Allow administrators to manage plant and disease records.
+- Enable intelligent universal search across the application.
+- Provide a responsive and user-friendly interface for all devices.
+- Store and manage images using Cloudinary.
+
