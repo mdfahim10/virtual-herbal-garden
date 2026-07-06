@@ -160,3 +160,74 @@ Integrated with Cloudinary for:
 - Mobile Devices
 
 Built using Bootstrap 5 and custom CSS.
+
+
+
+---
+
+#  Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript, EJS |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB, Mongoose |
+| **Authentication** | Passport.js, Passport Local, Express Session, Connect Flash |
+| **Image Storage** | Cloudinary, Multer |
+| **Development Tools** | VS Code, Git, GitHub |
+| **Deployment Ready** | Render / Railway *(can be deployed)* |
+
+---
+
+# 📁 Project Structure
+
+```text
+Virtual-Herbal-Garden
+│
+├── controllers/
+│   ├── disease.js
+│   ├── plant.js
+│   └── user.js
+│
+├── middleware/
+│   └── index.js
+│
+├── models/
+│   ├── disease.js
+│   ├── plant.js
+│   └── user.js
+│
+├── public/
+│   ├── css/
+│   ├── js/
+│   └── images/
+│
+├── routes/
+│   ├── disease.js
+│   ├── plant.js
+│   ├── search.js
+│   └── user.js
+│
+├── utils/
+│   ├── ExpressError.js
+│   └── wrapAsync.js
+│
+├── views/
+│   ├── diseases/
+│   ├── plants/
+│   ├── users/
+│   ├── includes/
+│   ├── layouts/
+│   └── home.ejs
+│
+├── app.js
+├── cloudConfig.js
+├── middleware.js
+├── schema.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+---
+
