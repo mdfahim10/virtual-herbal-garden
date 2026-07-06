@@ -231,3 +231,86 @@ Virtual-Herbal-Garden
 
 ---
 
+#  Installation & Setup
+
+## Prerequisites
+
+Before running this project, make sure the following are installed on your system:
+
+- Node.js (v18 or above recommended)
+- MongoDB Atlas account or local MongoDB installation
+- Cloudinary account
+- Git
+
+---
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/virtual-herbal-garden.git
+```
+
+Navigate to the project directory.
+
+```bash
+cd virtual-herbal-garden
+```
+
+---
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## Configure Environment Variables
+
+Create a `.env` file in the project root directory.
+
+Add the following variables:
+
+```env
+ATLASDB_URL=your_mongodb_connection_string
+
+SECRET=your_secret_key
+
+CLOUD_NAME=your_cloudinary_cloud_name
+
+CLOUD_API_KEY=your_cloudinary_api_key
+
+CLOUD_API_SECRET=your_cloudinary_api_secret
+```
+
+---
+
+## Run the Application
+
+Start the development server:
+
+```bash
+npm start
+```
+
+or
+
+```bash
+nodemon app.js
+```
+
+---
+
+## Open in Browser
+
+Visit the following URL:
+
+```
+http://localhost:8080
+```
+
+The application should now be running successfully.
+
+---
+
