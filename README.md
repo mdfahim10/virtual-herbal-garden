@@ -19,18 +19,18 @@ A full-stack web application for exploring medicinal plants, disease-wise herbal
 
 ---
 
-## 📖 Introduction
+## Introduction
 
 **Virtual Herbal Garden** is a full-stack web application developed to preserve and promote India's rich medicinal plant heritage through digital technology.
 
-The platform enables users to explore medicinal plants, discover disease-wise herbal remedies, understand traditional AYUSH systems, and access scientifically organized plant information from a single, user-friendly interface.
+The platform enables users to explore medicinal plants, discover disease-wise herbal remedies, understand Ayurveda, Siddha, Unani and other traditional medicinal systems, and access scientifically organized plant information from a single, user-friendly interface.
 
 The application includes secure authentication, role-based authorization, image management using Cloudinary, dynamic search functionality, and a responsive interface designed to provide an informative and seamless user experience.
 
 
 ---
 
-# 🌱 Project Overview
+# Project Overview
 
 Virtual Herbal Garden is a full-stack web application developed to digitally preserve and promote India's rich medicinal plant heritage. It serves as an educational platform where users can explore medicinal plants, understand their scientific and traditional uses, discover disease-wise herbal remedies, and learn about different AYUSH systems.
 
@@ -40,7 +40,7 @@ The primary objective of this project is to bridge traditional herbal knowledge 
 
 ---
 
-# 🎯 Objectives
+# Objectives
 
 - Develop a centralized digital repository of medicinal plants.
 - Preserve and promote traditional AYUSH knowledge.
@@ -51,3 +51,112 @@ The primary objective of this project is to bridge traditional herbal knowledge 
 - Provide a responsive and user-friendly interface for all devices.
 - Store and manage images using Cloudinary.
 
+---
+
+#  Features
+
+##  Medicinal Plant Module
+
+- Browse medicinal plants with an attractive card-based interface.
+- View detailed information for each medicinal plant.
+- Scientific Name
+- Common Name
+- Botanical Family
+- Plant Category
+- AYUSH System
+- Medicinal Uses
+- Preparation Methods
+- Dosage Information
+- Precautions
+- Side Effects
+- Plant Images
+
+---
+
+##  Disease Management Module
+
+- Browse common diseases.
+- View complete disease details.
+- Symptoms
+- Causes
+- Herbal Remedies
+- Recommended Medicinal Plants
+- Prevention Methods
+- Related Disease Images
+
+---
+
+##  Universal Search
+
+Search information using a single search bar across multiple datasets.
+
+Supports searching by:
+
+- Plant Name
+- Scientific Name
+- Disease Name
+- Symptoms
+- Medicinal Uses
+- Plant Category
+- AYUSH System
+
+---
+
+##  User Authentication
+
+- User Registration
+- Secure Login
+- Logout
+- Session Management
+- Flash Messages
+- Password Encryption using Passport.js
+
+---
+
+##  Admin Panel
+
+Role-Based Access Control (RBAC)
+
+Only administrators can:
+
+- Add New Plants
+- Update Plant Information
+- Delete Plants
+- Add New Diseases
+- Update Disease Information
+- Delete Diseases
+- Upload Images
+
+---
+
+##  Image Management
+
+Integrated with Cloudinary for:
+
+- Cloud Image Upload
+- Image Storage
+- Image Optimization
+- Secure Media Management
+
+---
+
+##  Dynamic Homepage
+
+- Responsive Hero Section
+- Animated Statistics Counter
+- Featured Medicinal Plants
+- Featured Diseases
+- Plant Categories
+- FAQ Section
+- Responsive Footer
+
+---
+
+##  Responsive Design
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+Built using Bootstrap 5 and custom CSS.
