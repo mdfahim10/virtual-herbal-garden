@@ -366,8 +366,3 @@ The application should now be running successfully.
 
 ---
 
-##  Admin Panel
-
-![Admin Panel](screenshots/admin.png)
-
----
