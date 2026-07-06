@@ -326,7 +326,7 @@ The application should now be running successfully.
 
 ##  Medicinal Plants
 
-![Medicinal Plants](screenshots/plants.png)
+![Medicinal Plants](screenshots/featured-plants.png)
 
 ---
 
