@@ -13,7 +13,7 @@ const upload = multer({ storage });
 // Show All Plants & Create Plant
 router
 .route("/")
-.get(wrapAsync(plantController.index))
+.get( isLoggedIn, wrapAsync(plantController.index))
 .post(
     isLoggedIn,
     isAdmin,
@@ -30,6 +30,7 @@ router.get("/new",
 // Show Single Plant
 router.get(
     "/:id",
+    isLoggedIn,
     wrapAsync(plantController.showPlant)
 );
 // Render Edit Form

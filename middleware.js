@@ -12,7 +12,7 @@ module.exports.isLoggedIn = (req, res, next) => {
 
         req.session.redirectUrl = req.originalUrl;
 
-        req.flash("error", "You must be logged in first!");
+        req.flash("error", "Please login to continue.");
 
         return res.redirect("/login");
     }
@@ -163,3 +163,4 @@ module.exports.isAdmin = (req, res, next) => {
     next();
 
 };
+

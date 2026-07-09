@@ -3,7 +3,6 @@ const User = require("../models/user");
 module.exports.renderSignupForm = (req, res) => {
     res.render("users/signup");
 };
-
 // Signup User
 module.exports.signup = async (req, res, next) => {
     try {
@@ -32,7 +31,7 @@ module.exports.renderLoginForm = (req, res) => {
 // Login User
 module.exports.login = async (req, res) => {
     req.flash("success", "Welcome Back!");
-    let redirectUrl = res.locals.redirectUrl || "/plants";
+    let redirectUrl = res.locals.redirectUrl || "/";
     res.redirect(redirectUrl);
 };
 // Logout User

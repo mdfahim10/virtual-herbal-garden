@@ -13,7 +13,7 @@ const upload = multer({ storage });
 // Show All Diseases & Create Disease
 router
 .route("/")
-.get(wrapAsync(diseaseController.index))
+.get(isLoggedIn, wrapAsync(diseaseController.index))
 .post(
     isLoggedIn,
     isAdmin,
@@ -31,6 +31,7 @@ router.get(
 // Show Disease
 router.get(
     "/:id",
+    isLoggedIn,
     wrapAsync(diseaseController.showDisease)
 );
 // Render Edit Form
