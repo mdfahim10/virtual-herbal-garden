@@ -23,6 +23,7 @@ const searchRoutes = require("./routes/search");
 const plantRoutes = require("./routes/plant");
 const diseaseRoutes = require("./routes/disease");
 const userRoutes = require("./routes/user");
+const adminRoutes = require("./routes/admin");
 
 // Utils
 const ExpressError = require("./utils/ExpressError");
@@ -212,6 +213,8 @@ app.use("/diseases", diseaseRoutes);
 app.use("/", userRoutes);
 
 app.use("/search", searchRoutes);
+
+app.use("/admin", adminRoutes);
 
 
 // =====================================================
