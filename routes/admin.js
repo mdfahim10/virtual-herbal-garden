@@ -24,3 +24,10 @@ router.patch(
     isAdmin,
     adminController.demoteUser
 );
+//delete user
+router.delete(
+    "/users/:id",
+    isLoggedIn,
+    isAdmin,
+    adminController.deleteUser
+);

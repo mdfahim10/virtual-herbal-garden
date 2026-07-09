@@ -186,56 +186,111 @@
 
                                     <% } else if(user.role === "user"){ %>
 
-                                        <form
-                                            action="/admin/users/<%= user._id %>/promote?_method=PATCH"
-                                            method="POST"
-                                            class="d-inline"
-                                            onsubmit='confirmAction(event,{
-                                                title:"Promote User",
-                                                text:"Make <%= user.username %> an Administrator?",
-                                                confirmText:"Promote",
-                                                confirmColor:"#198754"
-                                            })'
-                                        >
+<div class="d-flex justify-content-center gap-2">
 
-                                            <button
-                                                class="btn btn-success btn-sm"
-                                            >
+    <!-- Promote User -->
 
-                                                <i class="fa-solid fa-user-shield"></i>
+    <form
+        action="/admin/users/<%= user._id %>/promote?_method=PATCH"
+        method="POST"
+        class="d-inline"
+        onsubmit='confirmAction(event,{
+            title:"Promote User",
+            text:"Make <%= user.username %> an Administrator?",
+            confirmText:"Promote",
+            confirmColor:"#198754"
+        })'
+    >
 
-                                                Make Admin
+        <button class="btn btn-success btn-sm">
 
-                                            </button>
+            <i class="fa-solid fa-user-shield"></i>
 
-                                        </form>
+            Make Admin
+
+        </button>
+
+    </form>
+
+    <!-- Delete User -->
+
+    <form
+        action="/admin/users/<%= user._id %>?_method=DELETE"
+        method="POST"
+        class="d-inline"
+        onsubmit='confirmAction(event,{
+            title:"Delete User",
+            text:"Delete user <%= user.username %>? This action cannot be undone.",
+            confirmText:"Delete",
+            confirmColor:"#dc3545"
+        })'
+    >
+
+        <button class="btn btn-outline-danger btn-sm">
+
+            <i class="fa-solid fa-trash"></i>
+
+            Delete
+
+        </button>
+
+    </form>
+
+</div>
 
                                     <% } else { %>
 
-                                        <form
-                                            action="/admin/users/<%= user._id %>/demote?_method=PATCH"
-                                            method="POST"
-                                            class="d-inline"
-                                            onsubmit='confirmAction(event,{
-                                                title:"Remove Administrator",
-                                                text:"Remove Administrator privileges from <%= user.username %>?",
-                                                confirmText:"Remove",
-                                                confirmColor:"#dc3545"
-                                            })'
-                                        >
+<div class="d-flex justify-content-center gap-2">
 
-                                            <button
-                                                class="btn btn-danger btn-sm"
-                                            >
+    <!-- Remove Admin -->
 
-                                                <i class="fa-solid fa-user-minus"></i>
+    <form
+        action="/admin/users/<%= user._id %>/demote?_method=PATCH"
+        method="POST"
+        class="d-inline"
+        onsubmit='confirmAction(event,{
+            title:"Remove Administrator",
+            text:"Remove Administrator privileges from <%= user.username %>?",
+            confirmText:"Remove",
+            confirmColor:"#dc3545"
+        })'
+    >
 
-                                                Remove Admin
+        <button class="btn btn-danger btn-sm">
 
-                                            </button>
+            <i class="fa-solid fa-user-minus"></i>
 
-                                        </form>
+            Remove Admin
 
+        </button>
+
+    </form>
+
+    <!-- Delete Administrator -->
+
+    <form
+        action="/admin/users/<%= user._id %>?_method=DELETE"
+        method="POST"
+        class="d-inline"
+        onsubmit='confirmAction(event,{
+            title:"Delete Administrator",
+            text:"Delete administrator <%= user.username %>? This action cannot be undone.",
+            confirmText:"Delete",
+            confirmColor:"#dc3545"
+        })'
+    >
+
+        <button class="btn btn-outline-danger btn-sm">
+
+            <i class="fa-solid fa-trash"></i>
+
+            Delete
+
+        </button>
+
+    </form>
+
+</div>
                                     <% } %>
 
                                 </td>

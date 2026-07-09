@@ -35,3 +35,30 @@ module.exports.demoteUser = async (req, res) => {
     req.flash("success", "Admin privileges removed successfully.");
     res.redirect("/admin/users");
 };
+// Delete User
+module.exports.deleteUser = async (req, res) => {
+    const { id } = req.params;
+    // Prevent deleting yourself
+    if (req.user._id.toString() === id) {
+        req.flash(
+            "error",
+            "You cannot delete your own account."
+        );
+        return res.redirect("/admin/users");
+    }
+    const user = await User.findById(id);
+    if (!user) {
+        req.flash(
+            "error",
+            "User not found."
+        );
+        return res.redirect("/admin/users");
+    }
+    await User.findByIdAndDelete(id);
+        const message =
+            user.role === "admin"
+                ? `Administrator "${user.username}" deleted successfully.`
+                : `User "${user.username}" deleted successfully.`;
+            req.flash("success", message);
+            res.redirect("/admin/users");
+    };
