@@ -1,290 +1,150 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="show-disease-section py-5">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div class="card border-0 shadow-lg rounded-4">
-
                     <div class="card-body p-5">
-
-                        <!-- ========================= -->
                         <!-- Disease Header -->
-                        <!-- ========================= -->
-
                         <div class="text-center mb-5">
-
                             <img
                                 src="<%= disease.image?.url || '/images/default-disease.jpg' %>"
                                 class="img-fluid rounded-4 shadow mb-4"
                                 style="max-height:350px; object-fit:cover;"
                                 alt="<%= disease.diseaseName %>"
                             >
-
                             <h1 class="fw-bold">
-
                                 <%= disease.diseaseName %>
-
                             </h1>
-
                         </div>
-
-                        <!-- ========================= -->
                         <!-- Description -->
-                        <!-- ========================= -->
-
                         <h3 class="section-heading">
-
                             📖 Description
-
                         </h3>
-
                         <p class="lead">
-
                             <%= disease.description %>
-
                         </p>
-
                         <hr>
-
-                        <!-- ========================= -->
                         <!-- Symptoms -->
-                        <!-- ========================= -->
-
                         <h3 class="section-heading">
-
                             🤒 Symptoms
-
                         </h3>
-
                         <% if(disease.symptoms.length){ %>
-
                             <div class="row">
-
                                 <% disease.symptoms.forEach(symptom => { %>
-
                                     <div class="col-md-4 mb-2">
-
                                         <span class="badge bg-danger p-2 w-100">
-
                                             <%= symptom %>
-
                                         </span>
-
                                     </div>
-
                                 <% }) %>
-
                             </div>
-
                         <% } else { %>
-
                             <p class="text-muted">
-
                                 No symptoms available.
-
                             </p>
-
                         <% } %>
-
                         <hr>
-
-                        <!-- ========================= -->
                         <!-- Recommended Plants -->
-                        <!-- ========================= -->
-
                         <h3 class="section-heading mb-4">
-
                             🌿 Recommended Medicinal Plants
-
                         </h3>
-
                         <% if(disease.recommendedPlants.length){ %>
-
                         <div class="row">
-
                             <% disease.recommendedPlants.forEach(plant => { %>
-
                             <div class="col-lg-4 col-md-6 mb-4">
-
                                 <div class="card h-100 border-0 shadow-sm rounded-4">
-
                                     <img
                                         src="<%= plant.image.url %>"
                                         class="card-img-top"
                                         style="height:220px; object-fit:cover;"
                                         alt="<%= plant.commonName %>"
                                     >
-
                                     <div class="card-body text-center">
-
                                         <h4>
-
                                             <%= plant.commonName %>
-
                                         </h4>
-
                                         <p class="text-muted">
-
                                             <em>
-
                                                 <%= plant.scientificName %>
-
                                             </em>
-
                                         </p>
-
                                         <div class="mb-3">
-
                                             <span class="badge bg-success me-1">
-
                                                 <%= plant.plantType %>
-
                                             </span>
-
                                             <span class="badge bg-secondary">
-
                                                 <%= plant.ayushSystem %>
-
                                             </span>
-
                                         </div>
-
                                         <a
                                             href="/plants/<%= plant._id %>"
                                             class="btn btn-success w-100"
                                         >
-
                                             🌿 View Plant
-
                                         </a>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                             <% }) %>
-
                         </div>
-
                         <% } else { %>
-
                             <div class="alert alert-secondary">
-
                                 No medicinal plants linked yet.
-
                             </div>
-
                         <% } %>
-
                         <hr>
-
-                        <!-- ========================= -->
                         <!-- Prevention -->
-                        <!-- ========================= -->
-
                         <h3 class="section-heading">
-
                             🛡 Prevention
-
                         </h3>
-
                         <% if(disease.prevention.length){ %>
-
                             <ul>
-
                                 <% disease.prevention.forEach(item=>{ %>
-
                                     <li>
-
                                         <%= item %>
-
                                     </li>
-
                                 <% }) %>
-
                             </ul>
-
                         <% } %>
-
                         <hr>
-
-                        <!-- ========================= -->
                         <!-- Disclaimer -->
-                        <!-- ========================= -->
-
                         <div class="alert alert-warning rounded-4">
-
                             <h5>
-
                                 ⚠ Medical Disclaimer
-
                             </h5>
-
                             <p class="mb-0">
-
                                 The information provided is for educational
                                 purposes only. Always consult a qualified
                                 healthcare professional before using herbal
                                 remedies or beginning any treatment.
-
                             </p>
-
                         </div>
-
-                        <!-- ========================= -->
                         <!-- Buttons -->
-                        <!-- ========================= -->
-
                         <% if(currUser && currUser.role === "admin"){ %>
-
                         <div class="text-center mt-5">
-
                             <a
                                 href="/diseases/<%= disease._id %>/edit"
                                 class="btn btn-warning btn-lg me-3"
                             >
-
                                 <i class="fa-solid fa-pen-to-square"></i>
-
                                 Edit Disease
-
                             </a>
-
                             <form
                                 action="/diseases/<%= disease._id %>?_method=DELETE"
                                 method="POST"
                                 class="d-inline"
                             >
-
                                 <button class="btn btn-danger btn-lg">
-
                                     <i class="fa-solid fa-trash"></i>
-
                                     Delete Disease
-
                                 </button>
-
                             </form>
-
                         </div>
-
                         <% } %>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

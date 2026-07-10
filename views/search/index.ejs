@@ -1,188 +1,102 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="search-page py-5">
-
     <div class="container">
-
         <div class="text-center mb-5">
-
             <h1>🔍 Search Results</h1>
-
             <% if(query){ %>
-
                 <p class="lead">
-
                     Results for:
                     <strong>"<%= query %>"</strong>
-
                 </p>
-
             <% } %>
-
         </div>
-
-        <!-- ============================= -->
         <!-- Plants -->
-        <!-- ============================= -->
-
         <h2 class="mb-4">
-
             🌿 Medicinal Plants
             (<%= plants.length %>)
-
         </h2>
-
         <% if(plants.length){ %>
-
         <div class="row">
-
             <% plants.forEach(plant => { %>
-
             <div class="col-lg-4 col-md-6 mb-4">
-
                 <div class="card h-100 shadow-sm">
-
                     <img
                         src="<%= plant.image.url %>"
                         class="card-img-top"
                         style="height:220px; object-fit:cover;"
                         alt="<%= plant.commonName %>"
                     >
-
                     <div class="card-body">
-
                         <h4>
-
                             <%= plant.commonName %>
-
                         </h4>
-
                         <p class="text-muted">
-
                             <em>
-
                                 <%= plant.scientificName %>
-
                             </em>
-
                         </p>
-
                         <span class="badge bg-success">
-
                             <%= plant.plantType %>
-
                         </span>
-
                     </div>
-
                     <div class="card-footer bg-white border-0">
-
                         <a
                             href="/plants/<%= plant._id %>"
                             class="btn btn-success w-100"
                         >
-
                             View Plant
-
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
             <% }) %>
-
         </div>
-
         <% } else { %>
-
             <div class="alert alert-secondary">
-
                 No plants found.
-
             </div>
-
         <% } %>
-
         <hr class="my-5">
-
-        <!-- ============================= -->
         <!-- Diseases -->
-        <!-- ============================= -->
-
         <h2 class="mb-4">
-
             🩺 Diseases
             (<%= diseases.length %>)
-
         </h2>
-
         <% if(diseases.length){ %>
-
         <div class="row">
-
             <% diseases.forEach(disease => { %>
-
             <div class="col-lg-4 col-md-6 mb-4">
-
                 <div class="card h-100 shadow-sm">
-
                     <img
                         src="<%= disease.image.url %>"
                         class="card-img-top"
                         style="height:220px; object-fit:cover;"
                         alt="<%= disease.diseaseName %>"
                     >
-
                     <div class="card-body">
-
                         <h4>
-
                             <%= disease.diseaseName %>
-
                         </h4>
-
                         <p class="text-muted">
-
                             <%= disease.description.substring(0,120) %>...
-
                         </p>
-
                     </div>
-
                     <div class="card-footer bg-white border-0">
-
                         <a
                             href="/diseases/<%= disease._id %>"
                             class="btn btn-success w-100"
                         >
-
                             View Disease
-
                         </a>
-
                     </div>
-
                 </div>
-
             </div>
-
             <% }) %>
-
         </div>
-
         <% } else { %>
-
             <div class="alert alert-secondary">
-
                 No diseases found.
-
             </div>
-
         <% } %>
-
     </div>
-
 </section>

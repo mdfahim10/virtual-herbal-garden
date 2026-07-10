@@ -1,19 +1,12 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="new-plant-section">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div class="form-card">
-
                     <h1 class="text-center mb-4">
                         ✏️ Edit Medicinal Plant
                     </h1>
-
                     <form
     action="/plants/<%= plant._id %>?_method=PUT"
     method="POST"
@@ -21,356 +14,233 @@
     enctype="multipart/form-data"
     novalidate
 >
-
                         <!-- Common Name -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Common Name
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[commonName]"
                                 value="<%= plant.commonName %>"
                             >
-
                         </div>
-
                         <!-- Scientific Name -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Scientific Name
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[scientificName]"
                                 value="<%= plant.scientificName %>"
                             >
-
                         </div>
-
                         <!-- Local Name -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Local Name
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[localName]"
                                 value="<%= plant.localName %>"
                             >
-
                         </div>
-
                         <!-- Plant Type -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Plant Type
-
                             </label>
-
                             <select
                                 class="form-select"
                                 name="plant[plantType]"
                             >
-
                                 <option
                                     value="Herb"
                                     <%= plant.plantType==="Herb" ? "selected" : "" %>>
                                     Herb
                                 </option>
-
                                 <option
                                     value="Shrub"
                                     <%= plant.plantType==="Shrub" ? "selected" : "" %>>
                                     Shrub
                                 </option>
-
                                 <option
                                     value="Tree"
                                     <%= plant.plantType==="Tree" ? "selected" : "" %>>
                                     Tree
                                 </option>
-
                                 <option
                                     value="Climber"
                                     <%= plant.plantType==="Climber" ? "selected" : "" %>>
                                     Climber
                                 </option>
-
                                 <option
                                     value="Grass"
                                     <%= plant.plantType==="Grass" ? "selected" : "" %>>
                                     Grass
                                 </option>
-
                                 <option
     value="Creeper"
     <%= plant.plantType==="Creeper" ? "selected" : "" %>>
     Creeper
 </option>
-
                             </select>
-
                         </div>
-
                         <!-- AYUSH -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 AYUSH System
-
                             </label>
-
                             <select
                                 class="form-select"
                                 name="plant[ayushSystem]"
                             >
-
                                 <option value="Ayurveda"
                                 <%= plant.ayushSystem==="Ayurveda" ? "selected" : "" %>>
                                 Ayurveda
                                 </option>
-
                                 <option value="Siddha"
                                 <%= plant.ayushSystem==="Siddha" ? "selected" : "" %>>
                                 Siddha
                                 </option>
-
                                 <option value="Unani"
                                 <%= plant.ayushSystem==="Unani" ? "selected" : "" %>>
                                 Unani
                                 </option>
-
                                 <option value="Homeopathy"
                                 <%= plant.ayushSystem==="Homeopathy" ? "selected" : "" %>>
                                 Homeopathy
                                 </option>
-
                                 <option
                                     value="Yoga"
                                     <%= plant.ayushSystem==="Yoga" ? "selected" : "" %>>
                                     Yoga
                                     </option>
-
                                     <option
                                     value="Naturopathy"
                                     <%= plant.ayushSystem==="Naturopathy" ? "selected" : "" %>>
                                     Naturopathy
                                     </option>
-
                             </select>
-
                         </div>
-
                         <!-- Parts Used -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Parts Used
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[partsUsed]"
                                 value="<%= plant.partsUsed.join(', ') %>"
                             >
-
                         </div>
-
                         <!-- Primary Uses -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Primary Uses
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[primaryUses]"
                             ><%= plant.medicinalUses.primaryUses.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Conditions -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Conditions Treated
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[conditionsTreated]"
                             ><%= plant.medicinalUses.conditionsTreated.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Method -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Preparation Method
-
                             </label>
-
                             <input
                                 class="form-control"
                                 name="plant[method]"
                                 value="<%= plant.howToUse.method %>"
                             >
-
                         </div>
-
                         <!-- Steps -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Usage Steps
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="5"
                                 name="plant[steps]"
                             ><%= plant.howToUse.steps.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Precautions -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Precautions
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[precautions]"
                             ><%= plant.precautions.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Mild -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Mild Side Effects
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[mild]"
                             ><%= plant.possibleSideEffects.mild.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Overuse -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Overuse Effects
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[overuse]"
                             ><%= plant.possibleSideEffects.overuse.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Allergic -->
-
                         <div class="mb-4">
-
                             <label class="form-label">
-
                                 Allergic Reactions
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[allergic]"
                             ><%= plant.possibleSideEffects.allergicReactions.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Image -->
-
                         <div class="mb-3">
-
     <label class="form-label">
-
         Change Plant Image
-
     </label>
-
     <% if (plant.image && plant.image.url) { %>
-
 <div class="mb-3 text-center">
-
     <img
         src="<%= plant.image.url %>"
         class="img-fluid rounded"
         style="max-width:250px;"
     >
-
 </div>
-
-
 <% } %>
     <input
     
@@ -379,38 +249,22 @@
         name="plantImage"
         accept="image/*"
     >
-
 </div>
-
                         <div class="text-center">
-
                             <button class="btn btn-success btn-lg me-3">
-
                                 <i class="fa-solid fa-floppy-disk"></i>
-
                                 Update Plant
-
                             </button>
-
                             <a
                                 href="/plants/<%= plant._id %>"
                                 class="btn btn-secondary btn-lg"
                             >
-
                                 Cancel
-
                             </a>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

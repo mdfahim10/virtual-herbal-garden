@@ -1,22 +1,14 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="new-plant-section">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div class="form-card">
-
                     <h1 class="text-center mb-4">
                         🌿 Add New Medicinal Plant
                     </h1>
-
                     <form action="/plants" method="POST" class="needs-validation"
                     novalidate enctype="multipart/form-data">
-
                         <!-- Common Name -->
                         <div class="mb-3">
                             <label class="form-label">Common Name</label>
@@ -27,7 +19,6 @@
                                 placeholder="Tulsi"
                             >
                         </div>
-
                         <!-- Scientific Name -->
                         <div class="mb-3">
                             <label class="form-label">Scientific Name</label>
@@ -38,7 +29,6 @@
                                 placeholder="Ocimum sanctum"
                             >
                         </div>
-
                         <!-- Local Name -->
                         <div class="mb-3">
                             <label class="form-label">Local Name</label>
@@ -49,11 +39,9 @@
                                 placeholder="Holy Basil"
                             >
                         </div>
-
                         <!-- Plant Type -->
                         <div class="mb-3">
                             <label class="form-label">Plant Type</label>
-
                             <select
                                 class="form-select"
                                 name="plant[plantType]"
@@ -66,16 +54,12 @@
                                 <option>Grass</option>
                                 <option>Flower</option>
                             </select>
-
                         </div>
-
                         <!-- AYUSH -->
                         <div class="mb-3">
-
                             <label class="form-label">
                                 AYUSH System
                             </label>
-
                             <select
                                 class="form-select"
                                 name="plant[ayushSystem]"
@@ -86,185 +70,117 @@
                                 <option>Unani</option>
                                 <option>Homeopathy</option>
                             </select>
-
                         </div>
-
                         <!-- Parts Used -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Parts Used
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[partsUsed]"
                                 placeholder="Leaves, Roots, Stem"
                             >
-
                         </div>
-
                         <!-- Primary Uses -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Primary Medicinal Uses
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[primaryUses]"
                                 placeholder="Immunity Booster, Respiratory Health"
                             ></textarea>
-
                         </div>
-
                         <!-- Conditions -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Conditions Treated
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[conditionsTreated]"
                                 placeholder="Cold, Fever, Cough"
                             ></textarea>
-
                         </div>
-
                         <!-- Method -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Preparation Method
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="plant[method]"
                                 placeholder="Decoction"
                             >
-
                         </div>
-
                         <!-- Steps -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Usage Steps
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="5"
                                 name="plant[steps]"
                                 placeholder="Step 1, Step 2..."
                             ></textarea>
-
                         </div>
-
                         <!-- Precautions -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Precautions
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="plant[precautions]"
                                 placeholder="Avoid excessive intake..."
                             ></textarea>
-
                         </div>
-
                         <!-- Mild -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Mild Side Effects
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[mild]"
                             ></textarea>
-
                         </div>
-
                         <!-- Overuse -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Overuse Effects
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[overuse]"
                             ></textarea>
-
                         </div>
-
                         <!-- Allergic -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Allergic Reactions
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="2"
                                 name="plant[allergic]"
                             ></textarea>
-
                         </div>
-
                         <!-- Image -->
-
                         <div class="mb-3">
-
     <label class="form-label">
-
         Plant Image
-
     </label>
-
     <input
         type="file"
         class="form-control"
@@ -272,37 +188,20 @@
         accept="image/*"
         required
     >
-
 </div>
-
                         <!-- Buttons -->
-
                         <div class="text-center">
-
                             <button class="btn btn-success btn-lg me-3">
-
                                 <i class="fa-solid fa-plus"></i>
-
                                 Add Plant
-
                             </button>
-
                             <a href="/plants" class="btn btn-secondary btn-lg">
-
                                 Cancel
-
                             </a>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

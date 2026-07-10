@@ -1,19 +1,12 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="new-disease-section">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div class="form-card">
-
                     <h1 class="text-center mb-4">
                         ✏️ Edit Disease
                     </h1>
-
                     <form
                         action="/diseases/<%= disease._id %>?_method=PUT"
                         method="POST"
@@ -21,15 +14,11 @@
                         class="needs-validation"
                         novalidate
                     >
-
                         <!-- Disease Name -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Disease Name
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
@@ -37,182 +26,118 @@
                                 value="<%= disease.diseaseName %>"
                                 required
                             >
-
                         </div>
-
                         <!-- Description -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Description
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="4"
                                 name="disease[description]"
                             ><%= disease.description %></textarea>
-
                         </div>
-
                         <!-- Symptoms -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Symptoms (comma separated)
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[symptoms]"
                             ><%= disease.symptoms.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Causes -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Causes (comma separated)
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[causes]"
                             ><%= disease.causes.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Prevention -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Prevention (comma separated)
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[prevention]"
                             ><%= disease.prevention.join(", ") %></textarea>
-
                         </div>
-
                         <!-- Recommended Plants -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
                                 Recommended Medicinal Plants
                             </label>
-
                             <select
                                 class="form-select"
                                 multiple
                                 name="disease[recommendedPlants]"
                             >
-
                                 <% plants.forEach(plant => { %>
-
                                     <option
                                         value="<%= plant._id %>"
                                         <%= disease.recommendedPlants.some(
                                             p => p._id.equals(plant._id)
                                         ) ? "selected" : "" %>
                                     >
-
                                         <%= plant.commonName %>
-
                                     </option>
-
                                 <% }) %>
-
                             </select>
-
                             <small class="text-muted">
                                 Hold Ctrl (Windows) / Cmd (Mac) to select multiple plants.
                             </small>
-
                         </div>
-
                         <!-- Current Image -->
-
                         <% if(disease.image && disease.image.url){ %>
-
                             <div class="mb-3">
-
                                 <label class="form-label">
-
                                     Current Image
-
                                 </label>
-
                                 <br>
-
                                 <img
                                     src="<%= disease.image.url %>"
                                     class="img-thumbnail"
                                     width="250"
                                 >
-
                             </div>
-
                         <% } %>
-
                         <!-- Upload New Image -->
-
                         <div class="mb-4">
-
                             <label class="form-label">
                                 Change Disease Image
                             </label>
-
                             <input
                                 type="file"
                                 class="form-control"
                                 name="diseaseImage"
                                 accept="image/*"
                             >
-
                         </div>
-
                         <!-- Buttons -->
-
                         <div class="text-center">
-
                             <button class="btn btn-success btn-lg me-3">
-
                                 <i class="fa-solid fa-floppy-disk"></i>
-
                                 Update Disease
-
                             </button>
-
                             <a
                                 href="/diseases/<%= disease._id %>"
                                 class="btn btn-secondary btn-lg"
                             >
-
                                 Cancel
-
                             </a>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

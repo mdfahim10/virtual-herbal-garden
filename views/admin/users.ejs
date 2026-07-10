@@ -1,195 +1,106 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="container my-5">
-
     <!-- Page Heading -->
-
     <div class="text-center mb-5">
-
         <h1 class="text-success fw-bold">
             👑 Admin Dashboard
         </h1>
-
         <p class="text-muted">
             Manage registered users and assign administrator privileges.
         </p>
         <div class="row mb-5">
-
     <div class="col-md-4">
-
         <div class="card shadow-sm border-0 text-center">
-
             <div class="card-body">
-
                 <i class="fa-solid fa-users fa-2x text-primary mb-3"></i>
-
                 <h5>Total Users</h5>
-
                 <h2 class="fw-bold">
-
                     <%= totalUsers %>
-
                 </h2>
-
             </div>
-
         </div>
-
     </div>
-
     <div class="col-md-4">
-
         <div class="card shadow-sm border-0 text-center">
-
             <div class="card-body">
-
                 <i class="fa-solid fa-user-shield fa-2x text-success mb-3"></i>
-
                 <h5>Administrators</h5>
-
                 <h2 class="fw-bold">
-
                     <%= totalAdmins %>
-
                 </h2>
-
             </div>
-
         </div>
-
     </div>
-
     <div class="col-md-4">
-
         <div class="card shadow-sm border-0 text-center">
-
             <div class="card-body">
-
                 <i class="fa-solid fa-user fa-2x text-secondary mb-3"></i>
-
                 <h5>Normal Users</h5>
-
                 <h2 class="fw-bold">
-
                     <%= totalNormalUsers %>
-
                 </h2>
-
             </div>
-
         </div>
-
     </div>
-
 </div>
-
     </div>
-
     <!-- User Table -->
-
     <div class="card shadow border-0">
-
         <div class="card-body p-4">
-
             <div class="table-responsive">
-
                 <table class="table table-hover align-middle">
-
                     <thead class="table-success">
-
                         <tr>
-
                             <th>#</th>
-
                             <th>Username</th>
-
                             <th>Email</th>
-
                             <th>Role</th>
-
                             <th class="text-center">
                                 Action
                             </th>
-
                         </tr>
-
                     </thead>
-
                     <tbody>
-
                         <% users.forEach((user, index) => { %>
-
                             <tr>
-
                                 <td>
                                     <%= index + 1 %>
                                 </td>
-
                                 <td>
-
                                     <strong>
-
                                         <%= user.username %>
-
                                     </strong>
-
                                     <% if(currUser._id.equals(user._id)){ %>
-
                                         <span class="badge bg-primary ms-2">
                                             You
                                         </span>
-
                                     <% } %>
-
                                 </td>
-
                                 <td>
-
                                     <%= user.email %>
-
                                 </td>
-
                                 <td>
-
                                     <% if(user.role === "admin"){ %>
-
                                         <span class="badge bg-success">
-
                                             Admin
-
                                         </span>
-
                                     <% } else { %>
-
                                         <span class="badge bg-secondary">
-
                                             User
-
                                         </span>
-
                                     <% } %>
-
                                 </td>
-
                                 <td class="text-center">
-
                                     <% if(currUser._id.equals(user._id)){ %>
-
                                         <button
                                             class="btn btn-secondary btn-sm"
-                                            disabled
+                                           disabled
                                         >
-
                                             Current User
-
                                         </button>
-
                                     <% } else if(user.role === "user"){ %>
-
 <div class="d-flex justify-content-center gap-2">
-
     <!-- Promote User -->
-
     <form
         action="/admin/users/<%= user._id %>/promote?_method=PATCH"
         method="POST"
@@ -199,21 +110,14 @@
             text:"Make <%= user.username %> an Administrator?",
             confirmText:"Promote",
             confirmColor:"#198754"
-        })'
+       })'
     >
-
         <button class="btn btn-success btn-sm">
-
             <i class="fa-solid fa-user-shield"></i>
-
             Make Admin
-
         </button>
-
     </form>
-
     <!-- Delete User -->
-
     <form
         action="/admin/users/<%= user._id %>?_method=DELETE"
         method="POST"
@@ -225,25 +129,15 @@
             confirmColor:"#dc3545"
         })'
     >
-
         <button class="btn btn-outline-danger btn-sm">
-
             <i class="fa-solid fa-trash"></i>
-
             Delete
-
         </button>
-
     </form>
-
 </div>
-
                                     <% } else { %>
-
 <div class="d-flex justify-content-center gap-2">
-
     <!-- Remove Admin -->
-
     <form
         action="/admin/users/<%= user._id %>/demote?_method=PATCH"
         method="POST"
@@ -255,19 +149,12 @@
             confirmColor:"#dc3545"
         })'
     >
-
         <button class="btn btn-danger btn-sm">
-
             <i class="fa-solid fa-user-minus"></i>
-
             Remove Admin
-
         </button>
-
     </form>
-
     <!-- Delete Administrator -->
-
     <form
         action="/admin/users/<%= user._id %>?_method=DELETE"
         method="POST"
@@ -279,34 +166,19 @@
             confirmColor:"#dc3545"
         })'
     >
-
         <button class="btn btn-outline-danger btn-sm">
-
             <i class="fa-solid fa-trash"></i>
-
             Delete
-
         </button>
-
     </form>
-
-</div>
+                            </div>
                                     <% } %>
-
                                 </td>
-
                             </tr>
-
                         <% }) %>
-
                     </tbody>
-
                 </table>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

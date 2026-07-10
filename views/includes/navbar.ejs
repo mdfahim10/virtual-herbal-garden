@@ -1,31 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-
     <div class="container">
-
-        <!-- ========================= -->
         <!-- Logo -->
-        <!-- ========================= -->
-
         <a class="navbar-brand d-flex align-items-center" href="/">
-
             <img
                 src="/images/logo.png"
                 alt="Virtual Herbal Garden"
                 class="logo"
             >
-
             <img
                 src="/images/logotext.png"
                 alt="Virtual Herbal Garden"
                 class="logo_text"
             >
-
         </a>
-
-        <!-- ========================= -->
         <!-- Mobile Toggle -->
-        <!-- ========================= -->
-
         <button
             class="navbar-toggler"
             type="button"
@@ -35,59 +23,31 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
         >
-
             <span class="navbar-toggler-icon"></span>
-
         </button>
-
-        <!-- ========================= -->
-        <!-- Navbar -->
-        <!-- ========================= -->
-
+                <!-- Navbar -->
         <div class="collapse navbar-collapse" id="navbarContent">
-
-            <!-- ========================= -->
             <!-- Left Navigation -->
-            <!-- ========================= -->
-
             <ul class="navbar-nav mx-auto">
-
                 <li class="nav-item">
-
                     <a class="nav-link" href="/plants">
-
                         <i class="fa-solid fa-seedling"></i>
-
                         Plants
-
                     </a>
-
                 </li>
-
                 <li class="nav-item">
-
                     <a class="nav-link" href="/diseases">
-
                         <i class="fa-solid fa-notes-medical"></i>
-
                         Diseases
-
                     </a>
-
                 </li>
-
             </ul>
-
-            <!-- ========================= -->
             <!-- Universal Search -->
-            <!-- ========================= -->
-
             <form
                 class="d-flex search-bar me-3"
                 action="/search"
                 method="GET"
             >
-
                 <input
                     class="form-control search-input"
                     type="search"
@@ -96,219 +56,120 @@
                     value="<%= typeof query !== 'undefined' ? query : '' %>"
                     required
                 >
-
                 <button
                     class="btn search-btn"
                     type="submit"
                 >
-
                     <i class="fa-solid fa-magnifying-glass"></i>
-
                 </button>
-
             </form>
-
-            <!-- ========================= -->
             <!-- Right Navigation -->
-            <!-- ========================= -->
-
             <ul class="navbar-nav">
-
-                <!-- ========================= -->
                 <!-- Guest User -->
-                <!-- ========================= -->
-
                 <% if(!currUser){ %>
-
                     <li class="nav-item">
-
                         <a class="nav-link" href="/signup">
-
                             <i class="fa-solid fa-user-plus"></i>
-
                             Sign Up
-
                         </a>
-
                     </li>
-
                     <li class="nav-item">
-
                         <a class="nav-link" href="/login">
-
                             <i class="fa-solid fa-right-to-bracket"></i>
-
                             Login
-
                         </a>
-
                     </li>
-
                 <% } %>
-
-                <!-- ========================= -->
                 <!-- Logged In User -->
-                <!-- ========================= -->
-
                 <% if(currUser){ %>
-
-                    <!-- ========================= -->
                     <!-- Admin Panel -->
-                    <!-- ========================= -->
-
                     <% if(currUser.role === "admin"){ %>
-
                         <li class="nav-item dropdown">
-
                             <a
                                 class="nav-link dropdown-toggle text-primary fw-bold"
                                 href="#"
                                 role="button"
                                 data-bs-toggle="dropdown"
                             >
-
                                 <i class="fa-solid fa-user-shield"></i>
-
                                 Admin Panel
-
                             </a>
-
                             <ul class="dropdown-menu dropdown-menu-end">
-
                                 <li>
-
                                     <a
                                         class="dropdown-item"
                                         href="/admin/users"
                                     >
-
                                         <i class="fa-solid fa-users"></i>
-
                                         Manage Users
-
                                     </a>
-
                                 </li>
-
                                 <li>
-
                                     <a
                                         class="dropdown-item"
                                         href="/plants/new"
                                     >
-
                                         <i class="fa-solid fa-seedling"></i>
-
                                         Add Plant
-
                                     </a>
-
                                 </li>
-
                                 <li>
-
                                     <a
                                         class="dropdown-item"
                                         href="/diseases/new"
                                     >
-
                                         <i class="fa-solid fa-notes-medical"></i>
-
                                         Add Disease
-
                                     </a>
-
                                 </li>
-
                             </ul>
-
                         </li>
-
                     <% } %>
-
-                    <!-- ========================= -->
                     <!-- User Dropdown -->
-                    <!-- ========================= -->
-
                     <li class="nav-item dropdown">
-
                         <a
                             class="nav-link dropdown-toggle text-success fw-bold"
                             href="#"
                             role="button"
                             data-bs-toggle="dropdown"
                         >
-
                             <i class="fa-solid fa-circle-user"></i>
-
                             <%= currUser.username %>
-
                         </a>
-
                         <ul class="dropdown-menu dropdown-menu-end">
-
                             <li>
-
                                 <span class="dropdown-item-text">
-
                                     Logged in as
-
                                     <strong>
-
                                         <%= currUser.username %>
-
                                     </strong>
-
                                 </span>
-
                             </li>
-
                             <li>
-
                                 <hr class="dropdown-divider">
-
                             </li>
-
                             <li>
-
                                 <a
                                     class="dropdown-item"
                                     href="#"
                                 >
-
                                     <i class="fa-solid fa-user"></i>
-
                                     My Account
-
                                 </a>
-
                             </li>
-
                             <li>
-
                                 <a
                                     class="dropdown-item text-danger"
                                     href="/logout"
                                 >
-
                                     <i class="fa-solid fa-right-from-bracket"></i>
-
                                     Logout
-
                                 </a>
-
                             </li>
-
                         </ul>
-
                     </li>
-
                 <% } %>
-
             </ul>
-
         </div>
-
     </div>
-
 </nav>

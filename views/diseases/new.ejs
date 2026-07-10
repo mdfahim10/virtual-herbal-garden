@@ -1,21 +1,12 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="new-disease-section">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-10">
-
                 <div class="form-card">
-
                     <h1 class="text-center mb-4">
-
                         🩺 Add New Disease
-
                     </h1>
-
                     <form
                         action="/diseases"
                         method="POST"
@@ -23,197 +14,123 @@
                         class="needs-validation"
                         novalidate
                     >
-
                         <!-- Disease Name -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Disease Name
-
                             </label>
-
                             <input
                                 type="text"
                                 class="form-control"
                                 name="disease[diseaseName]"
                                 required
                             >
-
                         </div>
-
                         <!-- Description -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Description
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="4"
                                 name="disease[description]"
                                 required
                             ></textarea>
-
                         </div>
-
                         <!-- Symptoms -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Symptoms
                                 <small class="text-muted">
                                     (Comma separated)
                                 </small>
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[symptoms]"
                                 placeholder="Fever, Headache, Cough"
                             ></textarea>
-
                         </div>
-
                         <!-- Causes -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Causes
                                 <small class="text-muted">
                                     (Comma separated)
                                 </small>
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[causes]"
                                 placeholder="Virus, Bacteria"
                             ></textarea>
-
                         </div>
-
                         <!-- Prevention -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Prevention
                                 <small class="text-muted">
                                     (Comma separated)
                                 </small>
-
                             </label>
-
                             <textarea
                                 class="form-control"
                                 rows="3"
                                 name="disease[prevention]"
                                 placeholder="Drink clean water, Wash hands"
                             ></textarea>
-
                         </div>
-
                         <!-- Recommended Plants -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Recommended Medicinal Plants
-
                             </label>
-
                             <select
                                 class="form-select"
                                 name="disease[recommendedPlants]"
                                 multiple
                             >
-
                                 <% plants.forEach(plant => { %>
-
                                     <option value="<%= plant._id %>">
-
                                         <%= plant.commonName %>
-
                                     </option>
-
                                 <% }) %>
-
                             </select>
-
                             <small class="text-muted">
-
                                 Hold Ctrl (Windows) or Cmd (Mac) to select multiple plants.
-
                             </small>
-
                         </div>
-
                         <!-- Disease Image -->
-
                         <div class="mb-3">
-
                             <label class="form-label">
-
                                 Disease Image
-
                             </label>
-
                             <input
                                 type="file"
                                 class="form-control"
                                 name="diseaseImage"
                                 accept="image/*"
                             >
-
                         </div>
-
                         <!-- Buttons -->
-
                         <div class="text-center">
-
                             <button class="btn btn-success btn-lg me-3">
-
                                 <i class="fa-solid fa-plus"></i>
-
                                 Add Disease
-
                             </button>
-
                             <a
                                 href="/diseases"
                                 class="btn btn-secondary btn-lg"
                             >
-
                                 Cancel
-
                             </a>
-
                         </div>
-
                     </form>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>

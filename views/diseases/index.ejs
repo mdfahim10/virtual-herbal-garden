@@ -1,115 +1,63 @@
 <%- layout("layouts/boilerplate") %>
-
 <section class="diseases-page">
-
 <div class="container">
-
 <div class="page-heading text-center">
-
 <h1>
 🩺 Diseases & Natural Remedies
 </h1>
-
 <p>
 Explore common diseases and discover medicinal plants used in traditional medicine.
 </p>
-
 </div>
-
 <% if(currUser && currUser.role === "admin"){ %>
-
 <div class="text-end mb-4">
-
 <a href="/diseases/new" class="btn btn-success">
-
 <i class="fa-solid fa-plus"></i>
-
 Add New Disease
-
 </a>
-
 </div>
-
 <% } %>
-
 <div class="row g-4">
-
 <% allDiseases.forEach(disease=>{ %>
-
 <div class="col-lg-4 col-md-6">
-
 <div class="card disease-index-card h-100 shadow-sm">
-
 <div class="card-body">
-
 <img
     src="<%= disease.image?.url || '/images/default-disease.jpg' %>"
     class="card-img-top disease-image"
     alt="<%= disease.diseaseName %>"
 >
-
 <h3 class="text-center">
-
 <%= disease.diseaseName %>
-
 </h3>
-
 <p class="text-muted">
-
 <%= disease.description.substring(0,120) %>...
-
 </p>
-
 <hr>
-
 <strong>Symptoms</strong>
-
 <ul>
-
 <% disease.symptoms.slice(0,3).forEach(symptom=>{ %>
-
 <li><%= symptom %></li>
-
 <% }) %>
-
 </ul>
-
 <p>
-
 🌿
-
 <strong>
-
 <%= disease.recommendedPlants.length %>
-
 Recommended Plants
-
 </strong>
-
 </p>
-
 </div>
-
 <div class="card-footer bg-white border-0">
-
 <a
 href="/diseases/<%= disease._id %>"
 class="btn btn-success w-100">
-
 View Details
-
 </a>
-
 </div>
-
 </div>
-
 </div>
-
 <% }) %>
-
 </div>
-
 </div>
-
 </section>
