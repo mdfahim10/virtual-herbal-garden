@@ -602,7 +602,9 @@ If you would like to contribute:
 
 # 📜 License
 
-This project is developed for **educational, research, and portfolio purposes**.
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](LICENSE) file for more information.
 
 ---
 
@@ -635,3 +637,4 @@ Future enhancements and additional features will be introduced in **Version 2.0*
 ---
 
 ⭐ **If you found this project useful, consider giving it a star on GitHub!**
+
