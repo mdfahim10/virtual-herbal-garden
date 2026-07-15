@@ -2,55 +2,61 @@ body{
     font-family: "Plus Jakarta Sans", sans-serif;
     background:#f8faf8;
 }
-.navbar-brand{
-    display: flex;
-    align-items: center;
-    gap: 8px;           /* Space between logo and text */
-    text-decoration: none;
-}
-.logo{
-    width: 70px;        /* Increase logo size */
-    height: 70px;
-    object-fit: contain;
-}
-.logo_text{
-    width: 220px;       /* Increase text logo size */
-    height: auto;
-    object-fit: contain;
-}
+/* ===========================
+        Premium Navbar
+=========================== */
+
 .navbar{
-    min-height:80px;
+    background:linear-gradient(
+        180deg,
+        #fbfdf9 0%,
+        #eef8ef 100%
+    );
+    min-height:82px;
+    border-bottom:1px solid #d9e7d6;
+    box-shadow:0 8px 25px rgba(46,125,50,.08);
+    transition:.35s;
 }
+
+.logo{
+    width:70px;
+    height:70px;
+    transition:.35s;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+}
+
+.logo_text{
+    width:220px;
+}
+
 .nav-link{
-    color:#333 !important;
+    color:#2f3b2f !important;
     font-weight:600;
-    margin-right:12px;
+    margin:0 12px;
     transition:.3s;
 }
+
 .nav-link:hover{
     color:#2e7d32 !important;
 }
-.search-bar{
-    width:400px;
-}
+
 .search-input{
     border-radius:30px 0 0 30px !important;
+    border:1px solid #d6e6d4;
 }
+
 .search-btn{
     background:#2e7d32 !important;
-    color:white !important;
+    border:none;
+    color:white;
     border-radius:0 30px 30px 0 !important;
-    padding:0 20px;
 }
+
 .search-btn:hover{
     background:#1b5e20 !important;
-}
-@media(max-width:991px){
-    .search-bar{
-        width:100%;
-        margin-top:15px;
-        margin-bottom:15px;
-    }
 }
 /* =============================HOME PAGE===================== */
 /* ============ HERO SECTION========== */
